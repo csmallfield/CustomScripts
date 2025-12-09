@@ -1,0 +1,910 @@
+{
+    "header": {
+        "metadata": [
+            {
+                "metaName": "adskFileFormatVersion",
+                "metaValue": "100L"
+            }
+        ]
+    },
+    "namespaces": [],
+    "types": [],
+    "compounds": [
+        {
+            "name": "Stormvn::Cloud::create_cloud",
+            "uriImported": "stream:/stream",
+            "metadata": [
+		{
+                    "metaName": "icon",
+                    "metaType": "string",
+                    "metaValue": "../icons/cloud.svg"
+                },
+		{
+                    "metaName": "io_nodes",
+                    "metadata": [
+                        {
+                            "metaName": "io_inodes",
+                            "metadata": [
+                                {
+                                    "metaName": "input",
+                                    "metadata": [
+                                        {
+                                            "metaName": "DisplayMode",
+                                            "metaType": "string",
+                                            "metaValue": "2"
+                                        },
+                                        {
+                                            "metaName": "LayoutPos",
+                                            "metaType": "string",
+                                            "metaValue": "-254.652 39.2465"
+                                        },
+                                        {
+                                            "metaName": "zValue",
+                                            "metaType": "string",
+                                            "metaValue": "38.000000"
+                                        },
+                                        {
+                                            "metaName": "io_ports",
+                                            "metadata": [
+                                                {
+                                                    "metaName": "field"
+                                                },
+                                                {
+                                                    "metaName": "bounding_geometry"
+                                                },
+                                                {
+                                                    "metaName": "enable_cache"
+                                                },
+                                                {
+                                                    "metaName": "VDB_write"
+                                                },
+                                                {
+                                                    "metaName": "detail_size"
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "metaName": "io_onodes",
+                            "metadata": [
+                                {
+                                    "metaName": "output",
+                                    "metadata": [
+                                        {
+                                            "metaName": "DisplayMode",
+                                            "metaType": "string",
+                                            "metaValue": "2"
+                                        },
+                                        {
+                                            "metaName": "LayoutPos",
+                                            "metaType": "string",
+                                            "metaValue": "1678 -81.5668"
+                                        },
+                                        {
+                                            "metaName": "io_ports",
+                                            "metadata": [
+                                                {
+                                                    "metaName": "output_cloud"
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "metaName": "zValue",
+                                            "metaType": "string",
+                                            "metaValue": "36.000000"
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "metaName": "_recentNode_",
+                    "metaType": "string",
+                    "metaValue": "BifrostGraph,Core::Logic,if"
+                },
+                {
+                    "metaName": "_recentNode_",
+                    "metaType": "string",
+                    "metaValue": "BifrostGraph,Core::Graph,terminal"
+                },
+                {
+                    "metaName": "_recentNode_",
+                    "metaType": "string",
+                    "metaValue": "output"
+                },
+                {
+                    "metaName": "_recentNode_",
+                    "metaType": "string",
+                    "metaValue": "BifrostGraph,Core::Type_Conversion,to_int"
+                },
+                {
+                    "metaName": "_recentNode_",
+                    "metaType": "string",
+                    "metaValue": "BifrostGraph,Core::Time,time"
+                },
+                {
+                    "metaName": "ViewportRect",
+                    "metaType": "string",
+                    "metaValue": "-341 -359 1243 1062"
+                },
+                {
+                    "metaName": "DisplayMode",
+                    "metaType": "string",
+                    "metaValue": "2"
+                },
+                {
+                    "metaName": "LayoutPos",
+                    "metaType": "string",
+                    "metaValue": "969.07 -43.763"
+                },
+                {
+                    "metaName": "zValue",
+                    "metaType": "string",
+                    "metaValue": "429.000000"
+                },
+                {
+                    "metaName": "UILayout",
+                    "metaType": "string",
+                    "metaValue": "{\n    \"NodeLayout\": {\n        \"hideUndeclaredPorts\": false,\n        \"items\": [\n            {\n                \"port\": \"field\"\n            },\n            {\n                \"port\": \"bounding_geometry\"\n            },\n            {\n                \"expanded\": false,\n                \"group\": \"settings\",\n                \"items\": [\n                    {\n                        \"port\": \"detail_size\"\n                    },\n                    {\n                        \"port\": \"enable_cache\"\n                    },\n                    {\n                        \"port\": \"VDB_write\"\n                    }\n                ]\n            }\n        ]\n    }\n}\n"
+                },
+                {
+                    "metaName": "PortExpandedState",
+                    "metadata": [
+                        {
+                            "metaName": "settings",
+                            "metaType": "string",
+                            "metaValue": "0"
+                        }
+                    ]
+                }
+            ],
+            "terminalStates": [
+                {
+                    "name": "Core::Graph::terminal::final",
+                    "enabled": "false"
+                },
+                {
+                    "name": "Core::Graph::terminal::proxy",
+                    "enabled": "false"
+                },
+                {
+                    "name": "Core::Graph::terminal::diagnostic",
+                    "enabled": "true"
+                }
+            ],
+            "ports": [
+                {
+                    "portName": "field",
+                    "portDirection": "input",
+                    "portType": "Core::Fields::ScalarField",
+                    "portDefault": {}
+                },
+                {
+                    "portName": "bounding_geometry",
+                    "portDirection": "input",
+                    "portDefaultType": "Object",
+                    "portDefault": {}
+                },
+                {
+                    "portName": "output_cloud",
+                    "portDirection": "output"
+                },
+                {
+                    "portName": "enable_cache",
+                    "portDirection": "input",
+                    "portType": "bool",
+                    "portDefault": "false"
+                },
+                {
+                    "portName": "VDB_write",
+                    "portDirection": "input",
+                    "portType": "string",
+                    "portDefault": "cloud_###.vdb",
+                    "metadata": [
+                        {
+                            "metaName": "UIWidget",
+                            "metaType": "string",
+                            "metaValue": "FileBrowserWidget"
+                        },
+                        {
+                            "metaName": "UIWidgetProp",
+                            "metaType": "string",
+                            "metaValue": "browserMode=save;filter=\"OpenVDB (*.vdb);;All (*.*)\""
+                        }
+                    ]
+                },
+                {
+                    "portName": "detail_size",
+                    "portDirection": "input",
+                    "portType": "float",
+                    "portDefault": "0.0500000007f"
+                }
+            ],
+            "compoundNodes": [
+                {
+                    "nodeName": "field_to_volume",
+                    "nodeType": "Geometry::Converters::field_to_volume",
+                    "metadata": [
+                        {
+                            "metaName": "DisplayMode",
+                            "metaType": "string",
+                            "metaValue": "2"
+                        },
+                        {
+                            "metaName": "PortExpandedState",
+                            "metadata": [
+                                {
+                                    "metaName": "Resolution",
+                                    "metaType": "string",
+                                    "metaValue": "1"
+                                }
+                            ]
+                        },
+                        {
+                            "metaName": "zValue",
+                            "metaType": "string",
+                            "metaValue": "44.000000"
+                        },
+                        {
+                            "metaName": "LayoutPos",
+                            "metaType": "string",
+                            "metaValue": "356 -105"
+                        }
+                    ]
+                },
+                {
+                    "nodeName": "mesh_scope",
+                    "nodeType": "Diagnostic::Display::mesh_scope",
+                    "terminalStates": [
+                        {
+                            "name": "Core::Graph::terminal::final",
+                            "enabled": "true"
+                        },
+                        {
+                            "name": "Core::Graph::terminal::proxy",
+                            "enabled": "true"
+                        },
+                        {
+                            "name": "Core::Graph::terminal::diagnostic",
+                            "enabled": "false"
+                        }
+                    ],
+                    "metadata": [
+                        {
+                            "metaName": "DisplayMode",
+                            "metaType": "string",
+                            "metaValue": "2"
+                        },
+                        {
+                            "metaName": "LayoutPos",
+                            "metaType": "string",
+                            "metaValue": "6.89294 407.737"
+                        },
+                        {
+                            "metaName": "zValue",
+                            "metaType": "string",
+                            "metaValue": "34.000000"
+                        }
+                    ]
+                },
+                {
+                    "nodeName": "terminal1",
+                    "nodeType": "Core::Graph::terminal",
+                    "fanInPortNames": {
+                        "final": [],
+                        "proxy": [],
+                        "diagnostic": [
+                            "diagnostic_geo"
+                        ]
+                    },
+                    "terminalStates": [
+                        {
+                            "name": "Core::Graph::terminal::final",
+                            "enabled": "false"
+                        },
+                        {
+                            "name": "Core::Graph::terminal::proxy",
+                            "enabled": "false"
+                        }
+                    ],
+                    "metadata": [
+                        {
+                            "metaName": "DisplayMode",
+                            "metaType": "string",
+                            "metaValue": "2"
+                        },
+                        {
+                            "metaName": "PortExpandedState",
+                            "metadata": [
+                                {
+                                    "metaName": "diagnostic",
+                                    "metaType": "string",
+                                    "metaValue": "1"
+                                }
+                            ]
+                        },
+                        {
+                            "metaName": "LayoutPos",
+                            "metaType": "string",
+                            "metaValue": "324.077 363.991"
+                        },
+                        {
+                            "metaName": "zValue",
+                            "metaType": "string",
+                            "metaValue": "35.000000"
+                        }
+                    ]
+                },
+                {
+                    "nodeName": "write_OpenVDB_volume",
+                    "nodeType": "File::Geometry::write_OpenVDB_volume",
+                    "metadata": [
+                        {
+                            "metaName": "DisplayMode",
+                            "metaType": "string",
+                            "metaValue": "2"
+                        },
+                        {
+                            "metaName": "LayoutPos",
+                            "metaType": "string",
+                            "metaValue": "1103.21 168.828"
+                        },
+                        {
+                            "metaName": "zValue",
+                            "metaType": "string",
+                            "metaValue": "39.000000"
+                        }
+                    ]
+                },
+                {
+                    "nodeName": "file_cache",
+                    "nodeType": "Simulation::Common::file_cache",
+                    "fanInPortNames": {
+                        "objects": [
+                            "volume"
+                        ]
+                    },
+                    "metadata": [
+                        {
+                            "metaName": "DisplayMode",
+                            "metaType": "string",
+                            "metaValue": "2"
+                        },
+                        {
+                            "metaName": "LayoutPos",
+                            "metaType": "string",
+                            "metaValue": "751.641 99.2993"
+                        },
+                        {
+                            "metaName": "zValue",
+                            "metaType": "string",
+                            "metaValue": "40.000000"
+                        }
+                    ]
+                },
+                {
+                    "nodeName": "to_int",
+                    "nodeType": "Core::Type_Conversion::to_int",
+                    "metadata": [
+                        {
+                            "metaName": "DisplayMode",
+                            "metaType": "string",
+                            "metaValue": "2"
+                        },
+                        {
+                            "metaName": "LayoutPos",
+                            "metaType": "string",
+                            "metaValue": "852.698 574.938"
+                        },
+                        {
+                            "metaName": "zValue",
+                            "metaType": "string",
+                            "metaValue": "33.000000"
+                        }
+                    ]
+                },
+                {
+                    "nodeName": "time",
+                    "nodeType": "Core::Time::time",
+                    "metadata": [
+                        {
+                            "metaName": "DisplayMode",
+                            "metaType": "string",
+                            "metaValue": "2"
+                        },
+                        {
+                            "metaName": "LayoutPos",
+                            "metaType": "string",
+                            "metaValue": "581.608 582.468"
+                        },
+                        {
+                            "metaName": "zValue",
+                            "metaType": "string",
+                            "metaValue": "32.000000"
+                        }
+                    ]
+                },
+                {
+                    "nodeName": "if",
+                    "nodeType": "Core::Logic::if",
+                    "metadata": [
+                        {
+                            "metaName": "DisplayMode",
+                            "metaType": "string",
+                            "metaValue": "2"
+                        },
+                        {
+                            "metaName": "LayoutPos",
+                            "metaType": "string",
+                            "metaValue": "1361 -71.3551"
+                        },
+                        {
+                            "metaName": "zValue",
+                            "metaType": "string",
+                            "metaValue": "37.000000"
+                        }
+                    ]
+                }
+            ],
+            "connections": [
+                {
+                    "source": ".field",
+                    "target": "field_to_volume.field"
+                },
+                {
+                    "source": ".bounding_geometry",
+                    "target": "field_to_volume.bounding_geometry"
+                },
+                {
+                    "source": "mesh_scope.diagnostic_geo",
+                    "target": "terminal1.diagnostic.diagnostic_geo"
+                },
+                {
+                    "source": "file_cache.out_objects",
+                    "target": "write_OpenVDB_volume.volumes"
+                },
+                {
+                    "source": "to_int.int",
+                    "target": "write_OpenVDB_volume.frame"
+                },
+                {
+                    "source": "time.frame",
+                    "target": "to_int.from"
+                },
+                {
+                    "source": "field_to_volume.volume",
+                    "target": "file_cache.objects.volume"
+                },
+                {
+                    "source": ".bounding_geometry",
+                    "target": "mesh_scope.mesh"
+                },
+                {
+                    "source": "field_to_volume.volume",
+                    "target": "if.false_case"
+                },
+                {
+                    "source": "write_OpenVDB_volume.out_volumes",
+                    "target": "if.true_case"
+                },
+                {
+                    "source": "if.output",
+                    "target": ".output_cloud"
+                },
+                {
+                    "source": ".enable_cache",
+                    "target": "if.condition"
+                },
+                {
+                    "source": ".VDB_write",
+                    "target": "write_OpenVDB_volume.filename"
+                },
+                {
+                    "source": ".detail_size",
+                    "target": "field_to_volume.detail_size"
+                }
+            ],
+            "values": [
+                {
+                    "valueName": "field_to_volume.bounding_geometry",
+                    "valueType": "Object",
+                    "value": {}
+                },
+                {
+                    "valueName": "field_to_volume.detail_size",
+                    "valueType": "float",
+                    "value": "0.00100000005f"
+                },
+                {
+                    "valueName": "field_to_volume.min_bounds",
+                    "valueType": "Math::float3",
+                    "value": {
+                        "x": "-10f",
+                        "y": "-10f",
+                        "z": "-10f"
+                    }
+                },
+                {
+                    "valueName": "field_to_volume.max_bounds",
+                    "valueType": "Math::float3",
+                    "value": {
+                        "x": "10f",
+                        "y": "10f",
+                        "z": "10f"
+                    }
+                },
+                {
+                    "valueName": "field_to_volume.enable_bandwidth",
+                    "valueType": "bool",
+                    "value": "false"
+                },
+                {
+                    "valueName": "field_to_volume.bandwidth",
+                    "valueType": "float",
+                    "value": "0f"
+                },
+                {
+                    "valueName": "field_to_volume.volume_mode",
+                    "valueType": "Geometry::Converters::VolumeMode",
+                    "value": "Solid"
+                },
+                {
+                    "valueName": "field_to_volume.offset",
+                    "valueType": "float",
+                    "value": "0f"
+                },
+                {
+                    "valueName": "field_to_volume.store_level_set",
+                    "valueType": "bool",
+                    "value": "false"
+                },
+                {
+                    "valueName": "field_to_volume.store_fog_density",
+                    "valueType": "bool",
+                    "value": "true"
+                },
+                {
+                    "valueName": "field_to_volume.fog_density",
+                    "valueType": "float",
+                    "value": "1f"
+                },
+                {
+                    "valueName": "field_to_volume.resolution_mode",
+                    "valueType": "Geometry::Volume::ResolutionType",
+                    "value": "Relative"
+                },
+                {
+                    "valueName": "field_to_volume.field_interpretation",
+                    "valueType": "Geometry::Volume::SamplerInterpretation",
+                    "value": "SignedDistanceField"
+                },
+                {
+                    "valueName": "field_to_volume.density_threshold",
+                    "valueType": "float",
+                    "value": "0f"
+                },
+                {
+                    "valueName": "mesh_scope.mesh",
+                    "valueType": "Object",
+                    "value": {}
+                },
+                {
+                    "valueName": "mesh_scope.probe_geometry",
+                    "valueType": "Object",
+                    "value": {}
+                },
+                {
+                    "valueName": "mesh_scope.display_non_manifold_edges",
+                    "valueType": "bool",
+                    "value": "false"
+                },
+                {
+                    "valueName": "mesh_scope.display_border_edges",
+                    "valueType": "bool",
+                    "value": "false"
+                },
+                {
+                    "valueName": "mesh_scope.display_edges",
+                    "valueType": "bool",
+                    "value": "true"
+                },
+                {
+                    "valueName": "mesh_scope.edge_color",
+                    "valueType": "Math::float3",
+                    "value": {
+                        "x": "0f",
+                        "y": "0.131899998f",
+                        "z": "0.344399989f"
+                    }
+                },
+                {
+                    "valueName": "mesh_scope.border_edge_color",
+                    "valueType": "Math::float3",
+                    "value": {
+                        "x": "0f",
+                        "y": "1f",
+                        "z": "0f"
+                    }
+                },
+                {
+                    "valueName": "mesh_scope.non_manifold_edge_color",
+                    "valueType": "Math::float3",
+                    "value": {
+                        "x": "1f",
+                        "y": "0f",
+                        "z": "0f"
+                    }
+                },
+                {
+                    "valueName": "mesh_scope.face_tag",
+                    "valueType": "string",
+                    "value": ""
+                },
+                {
+                    "valueName": "mesh_scope.point_tag",
+                    "valueType": "string",
+                    "value": ""
+                },
+                {
+                    "valueName": "mesh_scope.display_face_ids",
+                    "valueType": "bool",
+                    "value": "false"
+                },
+                {
+                    "valueName": "mesh_scope.display_face_vertex_ids",
+                    "valueType": "bool",
+                    "value": "false"
+                },
+                {
+                    "valueName": "mesh_scope.display_face_vertex_normals",
+                    "valueType": "bool",
+                    "value": "false"
+                },
+                {
+                    "valueName": "mesh_scope.display_vertex_normals",
+                    "valueType": "bool",
+                    "value": "false"
+                },
+                {
+                    "valueName": "mesh_scope.display_face_normals",
+                    "valueType": "bool",
+                    "value": "false"
+                },
+                {
+                    "valueName": "mesh_scope.display_point_ids",
+                    "valueType": "bool",
+                    "value": "false"
+                },
+                {
+                    "valueName": "mesh_scope.display_faces",
+                    "valueType": "bool",
+                    "value": "false"
+                },
+                {
+                    "valueName": "mesh_scope.display_only_tagged_faces",
+                    "valueType": "bool",
+                    "value": "false"
+                },
+                {
+                    "valueName": "mesh_scope.face_shrink_amount",
+                    "valueType": "float",
+                    "value": "0.200000003f"
+                },
+                {
+                    "valueName": "mesh_scope.display_face_edges",
+                    "valueType": "bool",
+                    "value": "false"
+                },
+                {
+                    "valueName": "mesh_scope.display_points",
+                    "valueType": "bool",
+                    "value": "false"
+                },
+                {
+                    "valueName": "mesh_scope.display_only_tagged_points",
+                    "valueType": "bool",
+                    "value": "false"
+                },
+                {
+                    "valueName": "mesh_scope.display_face_edge_neighbors",
+                    "valueType": "bool",
+                    "value": "false"
+                },
+                {
+                    "valueName": "mesh_scope.display_point_face_neighbors",
+                    "valueType": "bool",
+                    "value": "false"
+                },
+                {
+                    "valueName": "mesh_scope.highlight_tagged_faces",
+                    "valueType": "bool",
+                    "value": "false"
+                },
+                {
+                    "valueName": "mesh_scope.highlight_tagged_points",
+                    "valueType": "bool",
+                    "value": "false"
+                },
+                {
+                    "valueName": "mesh_scope.point_color",
+                    "valueType": "Math::float3",
+                    "value": {
+                        "x": "1f",
+                        "y": "0f",
+                        "z": "0.931999981f"
+                    }
+                },
+                {
+                    "valueName": "mesh_scope.point_face_neighbor_color",
+                    "valueType": "Math::float3",
+                    "value": {
+                        "x": "0.198500007f",
+                        "y": "0f",
+                        "z": "0.0887999982f"
+                    }
+                },
+                {
+                    "valueName": "mesh_scope.face_edge_neighbor_color",
+                    "valueType": "Math::float3",
+                    "value": {
+                        "x": "0f",
+                        "y": "0.112800002f",
+                        "z": "0.298099995f"
+                    }
+                },
+                {
+                    "valueName": "mesh_scope.face_edge_color",
+                    "valueType": "Math::float3",
+                    "value": {
+                        "x": "0f",
+                        "y": "0.0516000018f",
+                        "z": "0.129500002f"
+                    }
+                },
+                {
+                    "valueName": "mesh_scope.point_normal_color",
+                    "valueType": "Math::float3",
+                    "value": {
+                        "x": "0.0803000033f",
+                        "y": "0.331999987f",
+                        "z": "0.0803000033f"
+                    }
+                },
+                {
+                    "valueName": "mesh_scope.highlighted_point_color",
+                    "valueType": "Math::float3",
+                    "value": {
+                        "x": "0.597800016f",
+                        "y": "0.50999999f",
+                        "z": "0.0187999997f"
+                    }
+                },
+                {
+                    "valueName": "mesh_scope.highlighted_face_color",
+                    "valueType": "Math::float3",
+                    "value": {
+                        "x": "0.461600006f",
+                        "y": "0.1884f",
+                        "z": "0.1884f"
+                    }
+                },
+                {
+                    "valueName": "mesh_scope.face_normal_color",
+                    "valueType": "Math::float3",
+                    "value": {
+                        "x": "0.414799988f",
+                        "y": "0.895600021f",
+                        "z": "0.414799988f"
+                    }
+                },
+                {
+                    "valueName": "mesh_scope.face_vertex_normal_color",
+                    "valueType": "Math::float3",
+                    "value": {
+                        "x": "0f",
+                        "y": "0.123199999f",
+                        "z": "0f"
+                    }
+                },
+                {
+                    "valueName": "mesh_scope.normal_length_multiplier",
+                    "valueType": "float",
+                    "value": "1f"
+                },
+                {
+                    "valueName": "mesh_scope.strand_thickness_multiplier",
+                    "valueType": "float",
+                    "value": "0.00200000009f"
+                },
+                {
+                    "valueName": "mesh_scope.arrow_thickness_multiplier",
+                    "valueType": "float",
+                    "value": "0.0299999993f"
+                },
+                {
+                    "valueName": "write_OpenVDB_volume.enable",
+                    "valueType": "bool",
+                    "value": "true"
+                },
+                {
+                    "valueName": "write_OpenVDB_volume.filename",
+                    "valueType": "string",
+                    "value": "C:/Users/storm/Desktop/cloud/test_cloud_##.vdb"
+                },
+                {
+                    "valueName": "write_OpenVDB_volume.overwrite",
+                    "valueType": "bool",
+                    "value": "true"
+                },
+                {
+                    "valueName": "write_OpenVDB_volume.create_directories",
+                    "valueType": "bool",
+                    "value": "false"
+                },
+                {
+                    "valueName": "write_OpenVDB_volume.properties",
+                    "valueType": "string",
+                    "value": "*"
+                },
+                {
+                    "valueName": "write_OpenVDB_volume.resolution_rounding",
+                    "valueType": "File::ResolutionRounding",
+                    "value": "Nearest"
+                },
+                {
+                    "valueName": "file_cache.mode",
+                    "valueType": "Simulation::Common::file_cache_mode",
+                    "value": "Passthrough Mode"
+                },
+                {
+                    "valueName": "file_cache.filename",
+                    "valueType": "string",
+                    "value": "$HOME/file_cache.##.bob"
+                },
+                {
+                    "valueName": "file_cache.properties",
+                    "valueType": "string",
+                    "value": "*"
+                },
+                {
+                    "valueName": "file_cache.alembic_interpolation",
+                    "valueType": "File::Interpolation",
+                    "value": "Linear"
+                },
+                {
+                    "valueName": "file_cache.volume_subdivision_structure",
+                    "valueType": "Geometry::Volume::SubdivisionStructure",
+                    "value": "Power2"
+                },
+                {
+                    "valueName": "file_cache.active_frame_range",
+                    "valueType": "bool",
+                    "value": "false"
+                },
+                {
+                    "valueName": "file_cache.start_frame",
+                    "valueType": "float",
+                    "value": "1f"
+                },
+                {
+                    "valueName": "file_cache.last_frame",
+                    "valueType": "float",
+                    "value": "240f"
+                }
+            ],
+            "reservedNodeNames": [
+                {
+                    "name": "input"
+                },
+                {
+                    "name": "output"
+                }
+            ]
+        }
+    ]
+}

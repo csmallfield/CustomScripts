@@ -1,0 +1,579 @@
+{
+    "header": {
+        "metadata": [
+            {
+                "metaName": "adskFileFormatVersion",
+                "metaValue": "100L"
+            }
+        ]
+    },
+    "namespaces": [],
+    "types": [],
+    "compounds": [
+        {
+            "name": "Stormvn::Cloud::cloud_volume_shader",
+            "uriImported": "file:///cloud_volume_shader.json",
+            "metadata": [
+		{
+                    "metaName": "icon",
+                    "metaType": "string",
+                    "metaValue": "../icons/cloud.svg"
+                },
+		{
+                    "metaName": "io_nodes",
+                    "metadata": [
+                        {
+                            "metaName": "io_inodes",
+                            "metadata": [
+                                {
+                                    "metaName": "input",
+                                    "metadata": [
+                                        {
+                                            "metaName": "DisplayMode",
+                                            "metaType": "string",
+                                            "metaValue": "2"
+                                        },
+                                        {
+                                            "metaName": "LayoutPos",
+                                            "metaType": "string",
+                                            "metaValue": "-341.248 37.1695"
+                                        },
+                                        {
+                                            "metaName": "io_ports",
+                                            "metadata": [
+                                                {
+                                                    "metaName": "geometry"
+                                                },
+                                                {
+                                                    "metaName": "density"
+                                                },
+                                                {
+                                                    "metaName": "scatter"
+                                                },
+                                                {
+                                                    "metaName": "scatter_color"
+                                                },
+                                                {
+                                                    "metaName": "scatter_anisotropy"
+                                                },
+                                                {
+                                                    "metaName": "transparent"
+                                                },
+                                                {
+                                                    "metaName": "transparent_depth"
+                                                },
+                                                {
+                                                    "metaName": "step_scale"
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "metaName": "zValue",
+                                            "metaType": "string",
+                                            "metaValue": "31.000000"
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "metaName": "io_onodes",
+                            "metadata": [
+                                {
+                                    "metaName": "output",
+                                    "metadata": [
+                                        {
+                                            "metaName": "DisplayMode",
+                                            "metaType": "string",
+                                            "metaValue": "2"
+                                        },
+                                        {
+                                            "metaName": "LayoutPos",
+                                            "metaType": "string",
+                                            "metaValue": "925 11"
+                                        },
+                                        {
+                                            "metaName": "io_ports",
+                                            "metadata": [
+                                                {
+                                                    "metaName": "out_geometry"
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "metaName": "zValue",
+                                            "metaType": "string",
+                                            "metaValue": "35.000000"
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "metaName": "UILayout",
+                    "metaType": "string",
+                    "metaValue": "{\n    \"NodeLayout\": {\n        \"hideUndeclaredPorts\": false,\n        \"items\": [\n            {\n                \"port\": \"geometry\"\n            },\n            {\n                \"expanded\": false,\n                \"group\": \"Volume_shader\",\n                \"items\": [\n                    {\n                        \"port\": \"density\"\n                    },\n                    {\n                        \"port\": \"scatter\"\n                    },\n                    {\n                        \"port\": \"scatter_color\"\n                    },\n                    {\n                        \"port\": \"scatter_anisotropy\"\n                    },\n                    {\n                        \"port\": \"transparent\"\n                    },\n                    {\n                        \"port\": \"transparent_depth\"\n                    },\n                    {\n                        \"port\": \"step_scale\"\n                    }\n                ]\n            }\n        ]\n    }\n}\n"
+                },
+                {
+                    "metaName": "PortExpandedState",
+                    "metadata": [
+                        {
+                            "metaName": "settings",
+                            "metaType": "string",
+                            "metaValue": "0"
+                        },
+                        {
+                            "metaName": "Volume_shader",
+                            "metaType": "string",
+                            "metaValue": "0"
+                        }
+                    ]
+                },
+                {
+                    "metaName": "ViewportRect",
+                    "metaType": "string",
+                    "metaValue": "-545.345 -366.41 1251.62 1331.88"
+                },
+                {
+                    "metaName": "DisplayMode",
+                    "metaType": "string",
+                    "metaValue": "2"
+                },
+                {
+                    "metaName": "LayoutPos",
+                    "metaType": "string",
+                    "metaValue": "1020.68 -11.3574"
+                },
+                {
+                    "metaName": "zValue",
+                    "metaType": "string",
+                    "metaValue": "150.000000"
+                }
+            ],
+            "ports": [
+                {
+                    "portName": "geometry",
+                    "portDirection": "input",
+                    "portType": "Object",
+                    "portDefault": {}
+                },
+                {
+                    "portName": "out_geometry",
+                    "portDirection": "output",
+                    "portType": "Object"
+                },
+                {
+                    "portName": "density",
+                    "portDirection": "input",
+                    "portType": "float",
+                    "portDefault": "1f"
+                },
+                {
+                    "portName": "scatter",
+                    "portDirection": "input",
+                    "portType": "float",
+                    "portDefault": "1f"
+                },
+                {
+                    "portName": "scatter_color",
+                    "portDirection": "input",
+                    "portType": "Math::float3",
+                    "portDefault": {
+                        "x": "3f",
+                        "y": "3f",
+                        "z": "3f"
+                    },
+                    "metadata": [
+                        {
+                            "metaName": "UIWidget",
+                            "metaType": "string",
+                            "metaValue": "ColorPicker"
+                        }
+                    ]
+                },
+                {
+                    "portName": "scatter_anisotropy",
+                    "portDirection": "input",
+                    "portType": "float",
+                    "portDefault": "-0.649999976f"
+                },
+                {
+                    "portName": "transparent",
+                    "portDirection": "input",
+                    "portType": "Math::float3",
+                    "portDefault": {
+                        "x": "0.300000012f",
+                        "y": "0.300000012f",
+                        "z": "0.300000012f"
+                    },
+                    "metadata": [
+                        {
+                            "metaName": "UIWidget",
+                            "metaType": "string",
+                            "metaValue": "ColorPicker"
+                        }
+                    ]
+                },
+                {
+                    "portName": "transparent_depth",
+                    "portDirection": "input",
+                    "portType": "float",
+                    "portDefault": "2f"
+                },
+                {
+                    "portName": "step_scale",
+                    "portDirection": "input",
+                    "portType": "float",
+                    "portDefault": "10f"
+                }
+            ],
+            "compoundNodes": [
+                {
+                    "nodeName": "Arnold_standard_volume_mat",
+                    "nodeType": "Rendering::Arnold::Arnold_standard_volume_mat",
+                    "metadata": [
+                        {
+                            "metaName": "DisplayMode",
+                            "metaType": "string",
+                            "metaValue": "2"
+                        },
+                        {
+                            "metaName": "LayoutPos",
+                            "metaType": "string",
+                            "metaValue": "14.2205 220.595"
+                        },
+                        {
+                            "metaName": "PortExpandedState",
+                            "metadata": [
+                                {
+                                    "metaName": "Scatter",
+                                    "metaType": "string",
+                                    "metaValue": "0"
+                                },
+                                {
+                                    "metaName": "Transparency",
+                                    "metaType": "string",
+                                    "metaValue": "1"
+                                },
+                                {
+                                    "metaName": "Anisotropy",
+                                    "metaType": "string",
+                                    "metaValue": "0"
+                                },
+                                {
+                                    "metaName": "Volume",
+                                    "metaType": "string",
+                                    "metaValue": "1"
+                                }
+                            ]
+                        },
+                        {
+                            "metaName": "zValue",
+                            "metaType": "string",
+                            "metaValue": "32.000000"
+                        }
+                    ]
+                },
+                {
+                    "nodeName": "assign_material",
+                    "nodeType": "Rendering::Materials::assign_material",
+                    "metadata": [
+                        {
+                            "metaName": "DisplayMode",
+                            "metaType": "string",
+                            "metaValue": "2"
+                        },
+                        {
+                            "metaName": "LayoutPos",
+                            "metaType": "string",
+                            "metaValue": "620 11"
+                        },
+                        {
+                            "metaName": "zValue",
+                            "metaType": "string",
+                            "metaValue": "34.000000"
+                        }
+                    ]
+                },
+                {
+                    "nodeName": "set_Arnold_volume_settings",
+                    "nodeType": "Rendering::Arnold::set_Arnold_volume_settings",
+                    "fanInPortNames": {
+                        "user_properties": []
+                    },
+                    "metadata": [
+                        {
+                            "metaName": "DisplayMode",
+                            "metaType": "string",
+                            "metaValue": "2"
+                        },
+                        {
+                            "metaName": "LayoutPos",
+                            "metaType": "string",
+                            "metaValue": "315 205"
+                        },
+                        {
+                            "metaName": "PortExpandedState",
+                            "metadata": [
+                                {
+                                    "metaName": "Arnold Volume",
+                                    "metaType": "string",
+                                    "metaValue": "0"
+                                }
+                            ]
+                        },
+                        {
+                            "metaName": "zValue",
+                            "metaType": "string",
+                            "metaValue": "33.000000"
+                        }
+                    ]
+                }
+            ],
+            "connections": [
+                {
+                    "source": "Arnold_standard_volume_mat.material_definition",
+                    "target": "set_Arnold_volume_settings.volume"
+                },
+                {
+                    "source": ".geometry",
+                    "target": "assign_material.geometry"
+                },
+                {
+                    "source": "set_Arnold_volume_settings.out_volume",
+                    "target": "assign_material.volume_material"
+                },
+                {
+                    "source": "assign_material.out_geometry",
+                    "target": ".out_geometry"
+                },
+                {
+                    "source": ".density",
+                    "target": "Arnold_standard_volume_mat.density"
+                },
+                {
+                    "source": ".scatter",
+                    "target": "Arnold_standard_volume_mat.scatter"
+                },
+                {
+                    "source": ".scatter_color",
+                    "target": "Arnold_standard_volume_mat.scatter_color"
+                },
+                {
+                    "source": ".scatter_anisotropy",
+                    "target": "Arnold_standard_volume_mat.scatter_anisotropy"
+                },
+                {
+                    "source": ".transparent",
+                    "target": "Arnold_standard_volume_mat.transparent"
+                },
+                {
+                    "source": ".transparent_depth",
+                    "target": "Arnold_standard_volume_mat.transparent_depth"
+                },
+                {
+                    "source": ".step_scale",
+                    "target": "set_Arnold_volume_settings.step_scale"
+                }
+            ],
+            "values": [
+                {
+                    "valueName": "Arnold_standard_volume_mat.name",
+                    "valueType": "string",
+                    "value": ""
+                },
+                {
+                    "valueName": "Arnold_standard_volume_mat.density",
+                    "valueType": "float",
+                    "value": "1f"
+                },
+                {
+                    "valueName": "Arnold_standard_volume_mat.density_channel",
+                    "valueType": "string",
+                    "value": "voxel_fog_density"
+                },
+                {
+                    "valueName": "Arnold_standard_volume_mat.scatter",
+                    "valueType": "float",
+                    "value": "1f"
+                },
+                {
+                    "valueName": "Arnold_standard_volume_mat.scatter_color",
+                    "valueType": "Math::float3",
+                    "value": {
+                        "x": "1f",
+                        "y": "1f",
+                        "z": "1f"
+                    }
+                },
+                {
+                    "valueName": "Arnold_standard_volume_mat.scatter_color_channel",
+                    "valueType": "string",
+                    "value": ""
+                },
+                {
+                    "valueName": "Arnold_standard_volume_mat.scatter_anisotropy",
+                    "valueType": "float",
+                    "value": "0f"
+                },
+                {
+                    "valueName": "Arnold_standard_volume_mat.transparent",
+                    "valueType": "Math::float3",
+                    "value": {
+                        "x": "0.0700000003f",
+                        "y": "0.0700000003f",
+                        "z": "0.0700000003f"
+                    }
+                },
+                {
+                    "valueName": "Arnold_standard_volume_mat.transparent_depth",
+                    "valueType": "float",
+                    "value": "1.25f"
+                },
+                {
+                    "valueName": "Arnold_standard_volume_mat.transparent_channel",
+                    "valueType": "string",
+                    "value": ""
+                },
+                {
+                    "valueName": "Arnold_standard_volume_mat.emission_mode",
+                    "valueType": "Rendering::Arnold::EmissionMode",
+                    "value": "blackbody"
+                },
+                {
+                    "valueName": "Arnold_standard_volume_mat.emission",
+                    "valueType": "float",
+                    "value": "1f"
+                },
+                {
+                    "valueName": "Arnold_standard_volume_mat.emission_color",
+                    "valueType": "Math::float3",
+                    "value": {
+                        "x": "1f",
+                        "y": "1f",
+                        "z": "1f"
+                    }
+                },
+                {
+                    "valueName": "Arnold_standard_volume_mat.emission_channel",
+                    "valueType": "string",
+                    "value": ""
+                },
+                {
+                    "valueName": "Arnold_standard_volume_mat.temperature",
+                    "valueType": "float",
+                    "value": "1f"
+                },
+                {
+                    "valueName": "Arnold_standard_volume_mat.temperature_channel",
+                    "valueType": "string",
+                    "value": "voxel_temperature"
+                },
+                {
+                    "valueName": "Arnold_standard_volume_mat.blackbody_kelvin",
+                    "valueType": "float",
+                    "value": "1f"
+                },
+                {
+                    "valueName": "Arnold_standard_volume_mat.blackbody_intensity",
+                    "valueType": "float",
+                    "value": "2f"
+                },
+                {
+                    "valueName": "Arnold_standard_volume_mat.displacement",
+                    "valueType": "Math::float3",
+                    "value": {
+                        "x": "0f",
+                        "y": "0f",
+                        "z": "0f"
+                    }
+                },
+                {
+                    "valueName": "Arnold_standard_volume_mat.interpolation",
+                    "valueType": "Rendering::Arnold::Interpolation",
+                    "value": "trilinear"
+                },
+                {
+                    "valueName": "Arnold_standard_volume_mat.blackbody_contrast",
+                    "valueType": "float",
+                    "value": "1f"
+                },
+                {
+                    "valueName": "Arnold_standard_volume_mat.scatter_secondary_anisotropy_mix",
+                    "valueType": "float",
+                    "value": "0f"
+                },
+                {
+                    "valueName": "Arnold_standard_volume_mat.scatter_secondary_anisotropy",
+                    "valueType": "float",
+                    "value": "0f"
+                },
+                {
+                    "valueName": "Arnold_standard_volume_mat.emission_scaling",
+                    "valueType": "Rendering::Arnold::EmissionScalingMode",
+                    "value": "opacity"
+                },
+                {
+                    "valueName": "assign_material.geometry",
+                    "valueType": "Object",
+                    "value": {}
+                },
+                {
+                    "valueName": "assign_material.set_surface",
+                    "valueType": "bool",
+                    "value": "true"
+                },
+                {
+                    "valueName": "assign_material.set_displacement",
+                    "valueType": "bool",
+                    "value": "true"
+                },
+                {
+                    "valueName": "assign_material.set_volume",
+                    "valueType": "bool",
+                    "value": "true"
+                },
+                {
+                    "valueName": "set_Arnold_volume_settings.volume",
+                    "valueType": "Object",
+                    "value": {}
+                },
+                {
+                    "valueName": "set_Arnold_volume_settings.primary_property",
+                    "valueType": "string",
+                    "value": ""
+                },
+                {
+                    "valueName": "set_Arnold_volume_settings.velocity_property",
+                    "valueType": "string",
+                    "value": "voxel_velocity"
+                },
+                {
+                    "valueName": "set_Arnold_volume_settings.step_scale",
+                    "valueType": "float",
+                    "value": "20f"
+                },
+                {
+                    "valueName": "set_Arnold_volume_settings.property",
+                    "valueType": "string",
+                    "value": "voxel_signed_distance"
+                },
+                {
+                    "valueName": "set_Arnold_volume_settings.samples",
+                    "valueType": "long",
+                    "value": "10"
+                }
+            ],
+            "reservedNodeNames": [
+                {
+                    "name": "input"
+                },
+                {
+                    "name": "output"
+                }
+            ]
+        }
+    ]
+}

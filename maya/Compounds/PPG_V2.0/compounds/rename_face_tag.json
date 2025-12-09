@@ -1,0 +1,280 @@
+{
+    "header": {
+        "metadata": [
+            {
+                "metaName": "adskFileFormatVersion",
+                "metaValue": "100L"
+            }
+        ]
+    },
+    "namespaces": [],
+    "types": [],
+    "compounds": [
+        {
+            "name": "PPG::rename_face_tag",
+            "uriImported": "file:///rename_face_tag.json",
+            "metadata": [
+                {
+                    "metaName": "documentation",
+                    "metaType": "string",
+                    "metaValue": "../docs/ENU/rename_face_tag.md"
+                },
+                {
+                    "metaName": "io_nodes",
+                    "metadata": [
+                        {
+                            "metaName": "io_inodes",
+                            "metadata": [
+                                {
+                                    "metaName": "input",
+                                    "metadata": [
+                                        {
+                                            "metaName": "DisplayMode",
+                                            "metaType": "string",
+                                            "metaValue": "2"
+                                        },
+                                        {
+                                            "metaName": "LayoutPos",
+                                            "metaType": "string",
+                                            "metaValue": "-699.113 -64.4847"
+                                        },
+                                        {
+                                            "metaName": "io_ports",
+                                            "metadata": [
+                                                {
+                                                    "metaName": "object"
+                                                },
+                                                {
+                                                    "metaName": "tag_expression"
+                                                },
+                                                {
+                                                    "metaName": "new_face_tag"
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "metaName": "io_onodes",
+                            "metadata": [
+                                {
+                                    "metaName": "output",
+                                    "metadata": [
+                                        {
+                                            "metaName": "DisplayMode",
+                                            "metaType": "string",
+                                            "metaValue": "2"
+                                        },
+                                        {
+                                            "metaName": "LayoutPos",
+                                            "metaType": "string",
+                                            "metaValue": "654.124 -96.5219"
+                                        },
+                                        {
+                                            "metaName": "io_ports",
+                                            "metadata": [
+                                                {
+                                                    "metaName": "out_object"
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "metaName": "_recentNode_",
+                    "metaType": "string",
+                    "metaValue": "BifrostGraph,PPG,check_face_tags"
+                },
+                {
+                    "metaName": "_recentNode_",
+                    "metaType": "string",
+                    "metaValue": "BifrostGraph,PPG,add_to_face_tag"
+                },
+                {
+                    "metaName": "_recentNode_",
+                    "metaType": "string",
+                    "metaValue": "BifrostGraph,PPG,rename_face_tag"
+                },
+                {
+                    "metaName": "_recentNode_",
+                    "metaType": "string",
+                    "metaValue": "BifrostGraph,PPG,PPG_instance"
+                },
+                {
+                    "metaName": "_recentNode_",
+                    "metaType": "string",
+                    "metaValue": "BifrostGraph,Geometry::Mesh,soften_harden_edges"
+                },
+                {
+                    "metaName": "ViewportRect",
+                    "metaType": "string",
+                    "metaValue": "-779 -455.376 1739 1020.75"
+                },
+                {
+                    "metaName": "DisplayMode",
+                    "metaType": "string",
+                    "metaValue": "2"
+                },
+                {
+                    "metaName": "zValue",
+                    "metaType": "string",
+                    "metaValue": "41.000000"
+                },
+                {
+                    "metaName": "LayoutPos",
+                    "metaType": "string",
+                    "metaValue": "-1817.89 186.279"
+                }
+            ],
+            "ports": [
+                {
+                    "portName": "object",
+                    "portDirection": "input",
+                    "portType": "Object",
+                    "portDefault": {}
+                },
+                {
+                    "portName": "tag_expression",
+                    "portDirection": "input",
+                    "portType": "string",
+                    "portDefault": ""
+                },
+                {
+                    "portName": "new_face_tag",
+                    "portDirection": "input",
+                    "portType": "string",
+                    "portDefault": "new_name"
+                },
+                {
+                    "portName": "out_object",
+                    "portDirection": "output"
+                }
+            ],
+            "compoundNodes": [
+                {
+                    "nodeName": "get_faces_from_tags",
+                    "nodeType": "PPG::get_faces_from_tags",
+                    "metadata": [
+                        {
+                            "metaName": "DisplayMode",
+                            "metaType": "string",
+                            "metaValue": "2"
+                        },
+                        {
+                            "metaName": "LayoutPos",
+                            "metaType": "string",
+                            "metaValue": "-303.949 7.04853"
+                        }
+                    ]
+                },
+                {
+                    "nodeName": "set_face_tag",
+                    "nodeType": "PPG::set_face_tag",
+                    "metadata": [
+                        {
+                            "metaName": "DisplayMode",
+                            "metaType": "string",
+                            "metaValue": "2"
+                        },
+                        {
+                            "metaName": "LayoutPos",
+                            "metaType": "string",
+                            "metaValue": "10.6783 -95.359"
+                        }
+                    ]
+                },
+                {
+                    "nodeName": "check_face_tags",
+                    "nodeType": "PPG::check_face_tags",
+                    "terminalStates": [
+                        {
+                            "name": "Core::Graph::terminal::final",
+                            "enabled": "true"
+                        },
+                        {
+                            "name": "Core::Graph::terminal::proxy",
+                            "enabled": "true"
+                        },
+                        {
+                            "name": "Core::Graph::terminal::diagnostic",
+                            "enabled": "true"
+                        }
+                    ],
+                    "metadata": [
+                        {
+                            "metaName": "DisplayMode",
+                            "metaType": "string",
+                            "metaValue": "2"
+                        },
+                        {
+                            "metaName": "LayoutPos",
+                            "metaType": "string",
+                            "metaValue": "315.5 -93"
+                        }
+                    ]
+                }
+            ],
+            "connections": [
+                {
+                    "source": "get_faces_from_tags.face_IDs",
+                    "target": "set_face_tag.face_IDs"
+                },
+                {
+                    "source": ".object",
+                    "target": "get_faces_from_tags.object"
+                },
+                {
+                    "source": ".object",
+                    "target": "set_face_tag.mesh"
+                },
+                {
+                    "source": ".tag_expression",
+                    "target": "get_faces_from_tags.tag_expression"
+                },
+                {
+                    "source": ".new_face_tag",
+                    "target": "set_face_tag.face_tag"
+                },
+                {
+                    "source": "set_face_tag.out_object",
+                    "target": "check_face_tags.mesh"
+                },
+                {
+                    "source": "check_face_tags.out_mesh",
+                    "target": ".out_object"
+                }
+            ],
+            "values": [
+                {
+                    "valueName": "get_faces_from_tags.tag_expression",
+                    "valueType": "string",
+                    "value": "*"
+                },
+                {
+                    "valueName": "set_face_tag.face_tag",
+                    "valueType": "string",
+                    "value": "test"
+                },
+                {
+                    "valueName": "set_face_tag.face_IDs",
+                    "valueType": "array<uint>",
+                    "value": []
+                }
+            ],
+            "reservedNodeNames": [
+                {
+                    "name": "input"
+                },
+                {
+                    "name": "output"
+                }
+            ]
+        }
+    ]
+}

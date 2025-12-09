@@ -1,0 +1,746 @@
+{
+    "header": {
+        "metadata": [
+            {
+                "metaName": "adskFileFormatVersion",
+                "metaValue": "100L"
+            }
+        ]
+    },
+    "namespaces": [],
+    "types": [],
+    "compounds": [
+        {
+            "name": "PPG::PPG_diagnostc",
+            "uriImported": "file:///PPG_diagnostc.json",
+            "metadata": [
+                {
+                    "metaName": "documentation",
+                    "metaType": "string",
+                    "metaValue": "../docs/ENU/PPG_diagnostic.md"
+                },
+                {
+                    "metaName": "io_nodes",
+                    "metadata": [
+                        {
+                            "metaName": "io_inodes",
+                            "metadata": [
+                                {
+                                    "metaName": "input",
+                                    "metadata": [
+                                        {
+                                            "metaName": "DisplayMode",
+                                            "metaType": "string",
+                                            "metaValue": "2"
+                                        },
+                                        {
+                                            "metaName": "LayoutPos",
+                                            "metaType": "string",
+                                            "metaValue": "-515.919 209.751"
+                                        },
+                                        {
+                                            "metaName": "io_ports",
+                                            "metadata": [
+                                                {
+                                                    "metaName": "mesh"
+                                                },
+                                                {
+                                                    "metaName": "enable_soften_harden"
+                                                },
+                                                {
+                                                    "metaName": "angle"
+                                                },
+                                                {
+                                                    "metaName": "enable"
+                                                },
+                                                {
+                                                    "metaName": "hue_range"
+                                                },
+                                                {
+                                                    "metaName": "hue_offset"
+                                                },
+                                                {
+                                                    "metaName": "hue_random_seed"
+                                                },
+                                                {
+                                                    "metaName": "saturation_base"
+                                                },
+                                                {
+                                                    "metaName": "sat_random"
+                                                },
+                                                {
+                                                    "metaName": "sat_random_seed"
+                                                },
+                                                {
+                                                    "metaName": "brightness"
+                                                },
+                                                {
+                                                    "metaName": "default_tag_color"
+                                                },
+                                                {
+                                                    "metaName": "tag_expression"
+                                                },
+                                                {
+                                                    "metaName": "face_indices"
+                                                },
+                                                {
+                                                    "metaName": "invert"
+                                                },
+                                                {
+                                                    "metaName": "offset_along_normal"
+                                                },
+                                                {
+                                                    "metaName": "line_color"
+                                                },
+                                                {
+                                                    "metaName": "offset"
+                                                },
+                                                {
+                                                    "metaName": "rotation"
+                                                },
+                                                {
+                                                    "metaName": "scale"
+                                                },
+                                                {
+                                                    "metaName": "max_labels"
+                                                },
+                                                {
+                                                    "metaName": "filter_field"
+                                                },
+                                                {
+                                                    "metaName": "show_face_tag"
+                                                },
+                                                {
+                                                    "metaName": "show_face_ID"
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "metaName": "io_onodes",
+                            "metadata": [
+                                {
+                                    "metaName": "output",
+                                    "metadata": [
+                                        {
+                                            "metaName": "DisplayMode",
+                                            "metaType": "string",
+                                            "metaValue": "2"
+                                        },
+                                        {
+                                            "metaName": "LayoutPos",
+                                            "metaType": "string",
+                                            "metaValue": "1218 29"
+                                        },
+                                        {
+                                            "metaName": "io_ports",
+                                            "metadata": [
+                                                {
+                                                    "metaName": "out_mesh"
+                                                },
+                                                {
+                                                    "metaName": "face_labels"
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "metaName": "_recentNode_",
+                    "metaType": "string",
+                    "metaValue": "BifrostGraph,PPG,assign_random_colors"
+                },
+                {
+                    "metaName": "_recentNode_",
+                    "metaType": "string",
+                    "metaValue": "BifrostGraph,Core::Logic,if"
+                },
+                {
+                    "metaName": "_recentNode_",
+                    "metaType": "string",
+                    "metaValue": "BifrostGraph,Core::Graph,terminal"
+                },
+                {
+                    "metaName": "_recentNode_",
+                    "metaType": "string",
+                    "metaValue": "BifrostGraph,PPG,PPG_multi_instance"
+                },
+                {
+                    "metaName": "_recentNode_",
+                    "metaType": "string",
+                    "metaValue": "BifrostGraph,PPG,PPG_instance"
+                },
+                {
+                    "metaName": "ViewportRect",
+                    "metaType": "string",
+                    "metaValue": "-595.621 -561.865 2119.54 2114.37"
+                },
+                {
+                    "metaName": "DisplayMode",
+                    "metaType": "string",
+                    "metaValue": "2"
+                },
+                {
+                    "metaName": "LayoutPos",
+                    "metaType": "string",
+                    "metaValue": "3896.3 295.191"
+                },
+                {
+                    "metaName": "zValue",
+                    "metaType": "string",
+                    "metaValue": "74.000000"
+                },
+                {
+                    "metaName": "UILayout",
+                    "metaType": "string",
+                    "metaValue": "{\n    \"NodeLayout\": {\n        \"hideUndeclaredPorts\": false,\n        \"items\": [\n            {\n                \"port\": \"mesh\"\n            },\n            {\n                \"expanded\": false,\n                \"group\": \"Soften-Harden Edges\",\n                \"items\": [\n                    {\n                        \"port\": \"enable soften harden\"\n                    },\n                    {\n                        \"port\": \"enable_soften_harden\"\n                    },\n                    {\n                        \"port\": \"angle\"\n                    }\n                ],\n                \"unique_id\": 2\n            },\n            {\n                \"expanded\": false,\n                \"group\": \"Color Tags\",\n                \"items\": [\n                    {\n                        \"port\": \"enable\"\n                    },\n                    {\n                        \"port\": \"hue_range\"\n                    },\n                    {\n                        \"port\": \"hue_offset\"\n                    },\n                    {\n                        \"port\": \"hue_random_seed\"\n                    },\n                    {\n                        \"port\": \"saturation_base\"\n                    },\n                    {\n                        \"port\": \"sat_random\"\n                    },\n                    {\n                        \"port\": \"sat_random_seed\"\n                    },\n                    {\n                        \"port\": \"brightness\"\n                    },\n                    {\n                        \"port\": \"default_tag_color\"\n                    }\n                ],\n                \"unique_id\": 6\n            },\n            {\n                \"expanded\": false,\n                \"group\": \"Face Tag Names\",\n                \"items\": [\n                    {\n                        \"expanded\": false,\n                        \"group\": \"Face Selection\",\n                        \"items\": [\n                            {\n                                \"port\": \"tag_expression\"\n                            },\n                            {\n                                \"port\": \"face_indices\"\n                            },\n                            {\n                                \"port\": \"invert\"\n                            }\n                        ],\n                        \"unique_id\": 17\n                    },\n                    {\n                        \"expanded\": false,\n                        \"group\": \"Tag Names\",\n                        \"items\": [\n                            {\n                                \"port\": \"offset_along_normal\"\n                            },\n                            {\n                                \"port\": \"line_color\"\n                            },\n                            {\n                                \"port\": \"offset\"\n                            },\n                            {\n                                \"port\": \"rotation\"\n                            },\n                            {\n                                \"port\": \"scale\"\n                            },\n                            {\n                                \"port\": \"max_labels\"\n                            },\n                            {\n                                \"port\": \"filter_field\"\n                            },\n                            {\n                                \"port\": \"swap_direction\"\n                            }\n                        ],\n                        \"unique_id\": 21\n                    },\n                    {\n                        \"expanded\": false,\n                        \"group\": \"Information\",\n                        \"items\": [\n                            {\n                                \"port\": \"show_face_tag\"\n                            },\n                            {\n                                \"port\": \"show_face_ID\"\n                            }\n                        ],\n                        \"unique_id\": 30\n                    }\n                ],\n                \"unique_id\": 16\n            }\n        ]\n    }\n}\n"
+                },
+                {
+                    "metaName": "PortExpandedState",
+                    "metadata": [
+                        {
+                            "metaName": "Face Tag Names.Face Selection",
+                            "metaType": "string",
+                            "metaValue": "0"
+                        },
+                        {
+                            "metaName": "Face Tag Names",
+                            "metaType": "string",
+                            "metaValue": "0"
+                        }
+                    ]
+                }
+            ],
+            "terminalStates": [
+                {
+                    "name": "Core::Graph::terminal::final",
+                    "enabled": "true"
+                },
+                {
+                    "name": "Core::Graph::terminal::proxy",
+                    "enabled": "true"
+                },
+                {
+                    "name": "Core::Graph::terminal::diagnostic",
+                    "enabled": "true"
+                }
+            ],
+            "ports": [
+                {
+                    "portName": "out_mesh",
+                    "portDirection": "output"
+                },
+                {
+                    "portName": "mesh",
+                    "portDirection": "input",
+                    "portType": "Object",
+                    "portDefault": {}
+                },
+                {
+                    "portName": "enable_soften_harden",
+                    "portDirection": "input",
+                    "portType": "bool",
+                    "portDefault": "true"
+                },
+                {
+                    "portName": "angle",
+                    "portDirection": "input",
+                    "portType": "float",
+                    "portDefault": "30f"
+                },
+                {
+                    "portName": "enable",
+                    "portDirection": "input",
+                    "portType": "bool",
+                    "portDefault": "true"
+                },
+                {
+                    "portName": "hue_range",
+                    "portDirection": "input",
+                    "portDefaultType": "float",
+                    "portDefault": "360f"
+                },
+                {
+                    "portName": "hue_offset",
+                    "portDirection": "input",
+                    "portDefaultType": "float",
+                    "portDefault": "0f"
+                },
+                {
+                    "portName": "hue_random_seed",
+                    "portDirection": "input",
+                    "portType": "long",
+                    "portDefault": "5"
+                },
+                {
+                    "portName": "saturation_base",
+                    "portDirection": "input",
+                    "portType": "float",
+                    "portDefault": "0.5f"
+                },
+                {
+                    "portName": "sat_random",
+                    "portDirection": "input",
+                    "portType": "float",
+                    "portDefault": "0.5f"
+                },
+                {
+                    "portName": "sat_random_seed",
+                    "portDirection": "input",
+                    "portType": "long",
+                    "portDefault": "0"
+                },
+                {
+                    "portName": "brightness",
+                    "portDirection": "input",
+                    "portType": "float",
+                    "portDefault": "0.319999993f"
+                },
+                {
+                    "portName": "default_tag_color",
+                    "portDirection": "input",
+                    "portDefaultType": "Math::float3",
+                    "portDefault": {
+                        "x": "0.159999996f",
+                        "y": "0.159999996f",
+                        "z": "0.159999996f"
+                    }
+                },
+                {
+                    "portName": "tag_expression",
+                    "portDirection": "input",
+                    "portType": "string",
+                    "portDefault": "* !inst_* !--"
+                },
+                {
+                    "portName": "face_indices",
+                    "portDirection": "input",
+                    "portDefaultType": "array<long>",
+                    "portDefault": []
+                },
+                {
+                    "portName": "invert",
+                    "portDirection": "input",
+                    "portType": "bool",
+                    "portDefault": "false"
+                },
+                {
+                    "portName": "offset_along_normal",
+                    "portDirection": "input",
+                    "portType": "float",
+                    "portDefault": "0.0299999993f"
+                },
+                {
+                    "portName": "line_color",
+                    "portDirection": "input",
+                    "portType": "Math::float3",
+                    "portDefault": {
+                        "x": "0f",
+                        "y": "0f",
+                        "z": "0f"
+                    },
+                    "metadata": [
+                        {
+                            "metaName": "UIWidget",
+                            "metaType": "string",
+                            "metaValue": "ColorPicker"
+                        }
+                    ]
+                },
+                {
+                    "portName": "offset",
+                    "portDirection": "input",
+                    "portDefaultType": "Math::float3",
+                    "portDefault": {
+                        "x": "0f",
+                        "y": "0f",
+                        "z": "0f"
+                    }
+                },
+                {
+                    "portName": "rotation",
+                    "portDirection": "input",
+                    "portType": "Math::float3",
+                    "portDefault": {
+                        "x": "0f",
+                        "y": "0f",
+                        "z": "0f"
+                    }
+                },
+                {
+                    "portName": "scale",
+                    "portDirection": "input",
+                    "portType": "float",
+                    "portDefault": "2f"
+                },
+                {
+                    "portName": "max_labels",
+                    "portDirection": "input",
+                    "portType": "long",
+                    "portDefault": "1000"
+                },
+                {
+                    "portName": "filter_field",
+                    "portDirection": "input"
+                },
+                {
+                    "portName": "show_face_tag",
+                    "portDirection": "input",
+                    "portType": "bool",
+                    "portDefault": "true"
+                },
+                {
+                    "portName": "show_face_ID",
+                    "portDirection": "input",
+                    "portType": "bool",
+                    "portDefault": "false"
+                },
+                {
+                    "portName": "face_labels",
+                    "portDirection": "output"
+                }
+            ],
+            "compoundNodes": [
+                {
+                    "nodeName": "display_face_tags",
+                    "nodeType": "PPG::display_face_tags",
+                    "terminalStates": [
+                        {
+                            "name": "Core::Graph::terminal::final",
+                            "enabled": "true"
+                        },
+                        {
+                            "name": "Core::Graph::terminal::proxy",
+                            "enabled": "true"
+                        },
+                        {
+                            "name": "Core::Graph::terminal::diagnostic",
+                            "enabled": "true"
+                        }
+                    ],
+                    "metadata": [
+                        {
+                            "metaName": "DisplayMode",
+                            "metaType": "string",
+                            "metaValue": "2"
+                        },
+                        {
+                            "metaName": "LayoutPos",
+                            "metaType": "string",
+                            "metaValue": "925 205"
+                        },
+                        {
+                            "metaName": "PortExpandedState",
+                            "metadata": [
+                                {
+                                    "metaName": "Selection",
+                                    "metaType": "string",
+                                    "metaValue": "1"
+                                },
+                                {
+                                    "metaName": "Information",
+                                    "metaType": "string",
+                                    "metaValue": "1"
+                                },
+                                {
+                                    "metaName": "Display",
+                                    "metaType": "string",
+                                    "metaValue": "1"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "nodeName": "soften_harden_edges",
+                    "nodeType": "Geometry::Mesh::soften_harden_edges",
+                    "metadata": [
+                        {
+                            "metaName": "DisplayMode",
+                            "metaType": "string",
+                            "metaValue": "2"
+                        },
+                        {
+                            "metaName": "LayoutPos",
+                            "metaType": "string",
+                            "metaValue": "-210.919 137.751"
+                        }
+                    ]
+                },
+                {
+                    "nodeName": "if",
+                    "nodeType": "Core::Logic::if",
+                    "metadata": [
+                        {
+                            "metaName": "DisplayMode",
+                            "metaType": "string",
+                            "metaValue": "2"
+                        },
+                        {
+                            "metaName": "LayoutPos",
+                            "metaType": "string",
+                            "metaValue": "138.227 87.3094"
+                        }
+                    ]
+                },
+                {
+                    "nodeName": "assign_random_colors",
+                    "nodeType": "PPG::assign_random_colors",
+                    "terminalStates": [
+                        {
+                            "name": "Core::Graph::terminal::diagnostic",
+                            "enabled": "true"
+                        }
+                    ],
+                    "metadata": [
+                        {
+                            "metaName": "DisplayMode",
+                            "metaType": "string",
+                            "metaValue": "2"
+                        },
+                        {
+                            "metaName": "LayoutPos",
+                            "metaType": "string",
+                            "metaValue": "588.167 52.667"
+                        }
+                    ]
+                }
+            ],
+            "connections": [
+                {
+                    "source": "display_face_tags.point_labels",
+                    "target": ".face_labels"
+                },
+                {
+                    "source": ".mesh",
+                    "target": "soften_harden_edges.mesh"
+                },
+                {
+                    "source": ".angle",
+                    "target": "soften_harden_edges.angle"
+                },
+                {
+                    "source": ".tag_expression",
+                    "target": "display_face_tags.tag_expression"
+                },
+                {
+                    "source": ".face_indices",
+                    "target": "display_face_tags.face_indices"
+                },
+                {
+                    "source": ".invert",
+                    "target": "display_face_tags.invert"
+                },
+                {
+                    "source": ".offset_along_normal",
+                    "target": "display_face_tags.offset_along_normal"
+                },
+                {
+                    "source": ".line_color",
+                    "target": "display_face_tags.line_color"
+                },
+                {
+                    "source": ".offset",
+                    "target": "display_face_tags.offset"
+                },
+                {
+                    "source": ".rotation",
+                    "target": "display_face_tags.rotation"
+                },
+                {
+                    "source": ".scale",
+                    "target": "display_face_tags.scale"
+                },
+                {
+                    "source": ".max_labels",
+                    "target": "display_face_tags.max_labels"
+                },
+                {
+                    "source": ".filter_field",
+                    "target": "display_face_tags.filter_field"
+                },
+                {
+                    "source": ".show_face_tag",
+                    "target": "display_face_tags.show_face_tag"
+                },
+                {
+                    "source": ".show_face_ID",
+                    "target": "display_face_tags.show_face_ID"
+                },
+                {
+                    "source": "soften_harden_edges.out_mesh",
+                    "target": "if.true_case"
+                },
+                {
+                    "source": ".mesh",
+                    "target": "if.false_case"
+                },
+                {
+                    "source": ".enable_soften_harden",
+                    "target": "if.condition"
+                },
+                {
+                    "source": "if.output",
+                    "target": "assign_random_colors.mesh"
+                },
+                {
+                    "source": ".enable",
+                    "target": "assign_random_colors.enable"
+                },
+                {
+                    "source": ".hue_range",
+                    "target": "assign_random_colors.hue_range"
+                },
+                {
+                    "source": ".hue_offset",
+                    "target": "assign_random_colors.hue_offset"
+                },
+                {
+                    "source": ".hue_random_seed",
+                    "target": "assign_random_colors.hue_random_seed"
+                },
+                {
+                    "source": ".saturation_base",
+                    "target": "assign_random_colors.saturation_base"
+                },
+                {
+                    "source": ".sat_random",
+                    "target": "assign_random_colors.sat_random"
+                },
+                {
+                    "source": ".sat_random_seed",
+                    "target": "assign_random_colors.sat_random_seed"
+                },
+                {
+                    "source": ".brightness",
+                    "target": "assign_random_colors.brightness"
+                },
+                {
+                    "source": ".default_tag_color",
+                    "target": "assign_random_colors.default_tag_color"
+                },
+                {
+                    "source": "assign_random_colors.out_mesh1",
+                    "target": "display_face_tags.mesh"
+                },
+                {
+                    "source": "assign_random_colors.out_mesh1",
+                    "target": ".out_mesh"
+                }
+            ],
+            "values": [
+                {
+                    "valueName": "display_face_tags.offset_along_normal",
+                    "valueType": "float",
+                    "value": "0.0299999993f"
+                },
+                {
+                    "valueName": "display_face_tags.line_color",
+                    "valueType": "Math::float3",
+                    "value": {
+                        "x": "0f",
+                        "y": "0f",
+                        "z": "0f"
+                    }
+                },
+                {
+                    "valueName": "display_face_tags.offset",
+                    "valueType": "Math::float3",
+                    "value": {
+                        "x": "0f",
+                        "y": "0f",
+                        "z": "0f"
+                    }
+                },
+                {
+                    "valueName": "display_face_tags.rotation",
+                    "valueType": "Math::float3",
+                    "value": {
+                        "x": "0f",
+                        "y": "0f",
+                        "z": "0f"
+                    }
+                },
+                {
+                    "valueName": "display_face_tags.scale",
+                    "valueType": "float",
+                    "value": "1.39900005f"
+                },
+                {
+                    "valueName": "display_face_tags.show_face_tag",
+                    "valueType": "bool",
+                    "value": "true"
+                },
+                {
+                    "valueName": "display_face_tags.show_face_ID",
+                    "valueType": "bool",
+                    "value": "false"
+                },
+                {
+                    "valueName": "display_face_tags.tag_expression",
+                    "valueType": "string",
+                    "value": "* !inst_*"
+                },
+                {
+                    "valueName": "display_face_tags.face_indices",
+                    "valueType": "array<long>",
+                    "value": []
+                },
+                {
+                    "valueName": "display_face_tags.max_labels",
+                    "valueType": "long",
+                    "value": "1000"
+                },
+                {
+                    "valueName": "display_face_tags.invert",
+                    "valueType": "bool",
+                    "value": "false"
+                },
+                {
+                    "valueName": "soften_harden_edges.mesh",
+                    "valueType": "Object",
+                    "value": {}
+                },
+                {
+                    "valueName": "soften_harden_edges.angle",
+                    "valueType": "float",
+                    "value": "30f"
+                },
+                {
+                    "valueName": "assign_random_colors.hue_range",
+                    "valueType": "float",
+                    "value": "360f"
+                },
+                {
+                    "valueName": "assign_random_colors.hue_offset",
+                    "valueType": "float",
+                    "value": "0f"
+                },
+                {
+                    "valueName": "assign_random_colors.default_tag_color",
+                    "valueType": "Math::float3",
+                    "value": {
+                        "x": "0.5f",
+                        "y": "0.5f",
+                        "z": "0.5f"
+                    }
+                }
+            ],
+            "reservedNodeNames": [
+                {
+                    "name": "input"
+                },
+                {
+                    "name": "output"
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,15 @@
+{
+  "AminoConfigurations": [
+    {
+      "vendorName": "CGSIDE",
+      "libraryVersion": "1.0",
+      "libraryName": "Custom Scatter CGS",
+      "jsonLibs": [
+        {
+          "path": "compounds",
+          "files": [ ]
+        }
+      ]
+    }
+  ]
+}

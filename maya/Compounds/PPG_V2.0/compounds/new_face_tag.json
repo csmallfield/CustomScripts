@@ -1,0 +1,302 @@
+{
+    "header": {
+        "metadata": [
+            {
+                "metaName": "adskFileFormatVersion",
+                "metaValue": "100L"
+            }
+        ]
+    },
+    "namespaces": [],
+    "types": [],
+    "compounds": [
+        {
+            "name": "PPG::new_face_tag",
+            "uriImported": "file:///new_face_tag.json",
+            "metadata": [
+                {
+                    "metaName": "documentation",
+                    "metaType": "string",
+                    "metaValue": "../docs/ENU/new_face_tag.md"
+                },
+                {
+                    "metaName": "io_nodes",
+                    "metadata": [
+                        {
+                            "metaName": "io_inodes",
+                            "metadata": [
+                                {
+                                    "metaName": "input",
+                                    "metadata": [
+                                        {
+                                            "metaName": "DisplayMode",
+                                            "metaType": "string",
+                                            "metaValue": "2"
+                                        },
+                                        {
+                                            "metaName": "LayoutPos",
+                                            "metaType": "string",
+                                            "metaValue": "10 55"
+                                        },
+                                        {
+                                            "metaName": "io_ports",
+                                            "metadata": [
+                                                {
+                                                    "metaName": "object"
+                                                },
+                                                {
+                                                    "metaName": "tag_expression"
+                                                },
+                                                {
+                                                    "metaName": "face_indices"
+                                                },
+                                                {
+                                                    "metaName": "invert"
+                                                },
+                                                {
+                                                    "metaName": "face_tag"
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "metaName": "io_onodes",
+                            "metadata": [
+                                {
+                                    "metaName": "output",
+                                    "metadata": [
+                                        {
+                                            "metaName": "DisplayMode",
+                                            "metaType": "string",
+                                            "metaValue": "2"
+                                        },
+                                        {
+                                            "metaName": "LayoutPos",
+                                            "metaType": "string",
+                                            "metaValue": "925 43"
+                                        },
+                                        {
+                                            "metaName": "io_ports",
+                                            "metadata": [
+                                                {
+                                                    "metaName": "out_object"
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "metaName": "_recentNode_",
+                    "metaType": "string",
+                    "metaValue": "BifrostGraph,PPG,set_face_tag"
+                },
+                {
+                    "metaName": "_recentNode_",
+                    "metaType": "string",
+                    "metaValue": "BifrostGraph,PPG,add_to_face_tag"
+                },
+                {
+                    "metaName": "_recentNode_",
+                    "metaType": "string",
+                    "metaValue": "BifrostGraph,PPG,set_color_for_face_tag"
+                },
+                {
+                    "metaName": "_recentNode_",
+                    "metaType": "string",
+                    "metaValue": "BifrostGraph,PPG,new_face_tag"
+                },
+                {
+                    "metaName": "_recentNode_",
+                    "metaType": "string",
+                    "metaValue": "BifrostGraph,PPG,face_tag_renamer"
+                },
+                {
+                    "metaName": "ViewportRect",
+                    "metaType": "string",
+                    "metaValue": "-70 -324.657 1301 943.315"
+                },
+                {
+                    "metaName": "DisplayMode",
+                    "metaType": "string",
+                    "metaValue": "2"
+                },
+                {
+                    "metaName": "LayoutPos",
+                    "metaType": "string",
+                    "metaValue": "545.776 -2608.06"
+                },
+                {
+                    "metaName": "zValue",
+                    "metaType": "string",
+                    "metaValue": "129.000000"
+                },
+                {
+                    "metaName": "UILayout",
+                    "metaType": "string",
+                    "metaValue": "{\n    \"NodeLayout\": {\n        \"hideUndeclaredPorts\": false,\n        \"items\": [\n            {\n                \"port\": \"object\"\n            },\n            {\n                \"expanded\": false,\n                \"group\": \"Selection\",\n                \"items\": [\n                    {\n                        \"port\": \"tag_expression\"\n                    },\n                    {\n                        \"port\": \"face_indices\"\n                    },\n                    {\n                        \"port\": \"invert\"\n                    }\n                ],\n                \"unique_id\": 2\n            },\n            {\n                \"expanded\": false,\n                \"group\": \"Output\",\n                \"items\": [\n                    {\n                        \"port\": \"face_tag\"\n                    },\n                    {\n                        \"port\": \"exclusive\"\n                    }\n                ],\n                \"unique_id\": 6\n            }\n        ]\n    }\n}\n"
+                },
+                {
+                    "metaName": "PortExpandedState",
+                    "metadata": [
+                        {
+                            "metaName": "Output",
+                            "metaType": "string",
+                            "metaValue": "0"
+                        },
+                        {
+                            "metaName": "Selection",
+                            "metaType": "string",
+                            "metaValue": "0"
+                        }
+                    ]
+                }
+            ],
+            "ports": [
+                {
+                    "portName": "object",
+                    "portDirection": "input",
+                    "portType": "Object",
+                    "portDefault": {}
+                },
+                {
+                    "portName": "out_object",
+                    "portDirection": "output"
+                },
+                {
+                    "portName": "tag_expression",
+                    "portDirection": "input",
+                    "portType": "string",
+                    "portDefault": "face_tag_name(s)"
+                },
+                {
+                    "portName": "face_indices",
+                    "portDirection": "input",
+                    "portDefaultType": "array<long>",
+                    "portDefault": []
+                },
+                {
+                    "portName": "invert",
+                    "portDirection": "input",
+                    "portType": "bool",
+                    "portDefault": "false"
+                },
+                {
+                    "portName": "face_tag",
+                    "portDirection": "input",
+                    "portType": "string",
+                    "portDefault": "new_face_tag"
+                }
+            ],
+            "compoundNodes": [
+                {
+                    "nodeName": "get_face_indices",
+                    "nodeType": "PPG::get_face_indices",
+                    "metadata": [
+                        {
+                            "metaName": "DisplayMode",
+                            "metaType": "string",
+                            "metaValue": "2"
+                        },
+                        {
+                            "metaName": "LayoutPos",
+                            "metaType": "string",
+                            "metaValue": "320 -33"
+                        }
+                    ]
+                },
+                {
+                    "nodeName": "set_face_tag",
+                    "nodeType": "PPG::set_face_tag",
+                    "metadata": [
+                        {
+                            "metaName": "DisplayMode",
+                            "metaType": "string",
+                            "metaValue": "2"
+                        },
+                        {
+                            "metaName": "LayoutPos",
+                            "metaType": "string",
+                            "metaValue": "638.5 102"
+                        }
+                    ]
+                }
+            ],
+            "connections": [
+                {
+                    "source": ".object",
+                    "target": "get_face_indices.mesh"
+                },
+                {
+                    "source": ".tag_expression",
+                    "target": "get_face_indices.tag_expression"
+                },
+                {
+                    "source": ".face_indices",
+                    "target": "get_face_indices.face_indices"
+                },
+                {
+                    "source": ".invert",
+                    "target": "get_face_indices.invert"
+                },
+                {
+                    "source": "get_face_indices.face_IDs",
+                    "target": "set_face_tag.face_IDs"
+                },
+                {
+                    "source": ".object",
+                    "target": "set_face_tag.mesh"
+                },
+                {
+                    "source": ".face_tag",
+                    "target": "set_face_tag.face_tag"
+                },
+                {
+                    "source": "set_face_tag.out_object",
+                    "target": ".out_object"
+                }
+            ],
+            "values": [
+                {
+                    "valueName": "get_face_indices.mesh",
+                    "valueType": "Object",
+                    "value": {}
+                },
+                {
+                    "valueName": "get_face_indices.tag_expression",
+                    "valueType": "string",
+                    "value": "*"
+                },
+                {
+                    "valueName": "get_face_indices.face_indices",
+                    "valueType": "array<long>",
+                    "value": []
+                },
+                {
+                    "valueName": "get_face_indices.invert",
+                    "valueType": "bool",
+                    "value": "true"
+                },
+                {
+                    "valueName": "set_face_tag.face_IDs",
+                    "valueType": "array<uint>",
+                    "value": []
+                }
+            ],
+            "reservedNodeNames": [
+                {
+                    "name": "input"
+                },
+                {
+                    "name": "output"
+                }
+            ]
+        }
+    ]
+}

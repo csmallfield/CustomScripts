@@ -1,0 +1,546 @@
+{
+    "header": {
+        "metadata": [
+            {
+                "metaName": "adskFileFormatVersion",
+                "metaValue": "100L"
+            }
+        ]
+    },
+    "namespaces": [],
+    "types": [],
+    "compounds": [
+        {
+            "name": "VHH::Core::Fields::change_range_field",
+            "metadata": [
+                {
+                    "metaName": "documentation",
+                    "metaType": "string",
+                    "metaValue": "../docs/change_range_field.md"
+                },
+                {
+                    "metaName": "icon",
+                    "metaType": "string",
+                    "metaValue": "../helper_icons/derhornen.png"
+                },
+                {
+                    "metaName": "_recentNode_",
+                    "metaType": "string",
+                    "metaValue": "BifrostGraph,Core::Logic,if"
+                },
+                {
+                    "metaName": "_recentNode_",
+                    "metaType": "string",
+                    "metaValue": "BifrostGraph,Core::Math,clamp"
+                },
+                {
+                    "metaName": "_recentNode_",
+                    "metaType": "string",
+                    "metaValue": "BifrostGraph,Core::Math,add"
+                },
+                {
+                    "metaName": "_recentNode_",
+                    "metaType": "string",
+                    "metaValue": "BifrostGraph,Core::Math,multiply"
+                },
+                {
+                    "metaName": "_recentNode_",
+                    "metaType": "string",
+                    "metaValue": "BifrostGraph,Core::Math,subtract"
+                },
+                {
+                    "metaName": "io_nodes",
+                    "metadata": [
+                        {
+                            "metaName": "io_inodes",
+                            "metadata": [
+                                {
+                                    "metaName": "input",
+                                    "metadata": [
+                                        {
+                                            "metaName": "DisplayMode",
+                                            "metaType": "string",
+                                            "metaValue": "2"
+                                        },
+                                        {
+                                            "metaName": "LayoutPos",
+                                            "metaType": "string",
+                                            "metaValue": "-835.238 506.276"
+                                        },
+                                        {
+                                            "metaName": "io_ports",
+                                            "metadata": [
+                                                {
+                                                    "metaName": "field_in"
+                                                },
+                                                {
+                                                    "metaName": "min"
+                                                },
+                                                {
+                                                    "metaName": "max"
+                                                },
+                                                {
+                                                    "metaName": "oldMin"
+                                                },
+                                                {
+                                                    "metaName": "oldMax"
+                                                },
+                                                {
+                                                    "metaName": "clamp"
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "metaName": "io_onodes",
+                            "metadata": [
+                                {
+                                    "metaName": "output",
+                                    "metadata": [
+                                        {
+                                            "metaName": "DisplayMode",
+                                            "metaType": "string",
+                                            "metaValue": "2"
+                                        },
+                                        {
+                                            "metaName": "LayoutPos",
+                                            "metaType": "string",
+                                            "metaValue": "1733.4 130.661"
+                                        },
+                                        {
+                                            "metaName": "io_ports",
+                                            "metadata": [
+                                                {
+                                                    "metaName": "output"
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "metaName": "backdrop",
+                    "metadata": [
+                        {
+                            "metaName": "type",
+                            "metaType": "string",
+                            "metaValue": "backdrop"
+                        },
+                        {
+                            "metaName": "text",
+                            "metaType": "string",
+                            "metaValue": "OutValue = Min + (((Value-OldMin)/(OldMax-OldMin)) * (Max-Min)) "
+                        },
+                        {
+                            "metaName": "coords",
+                            "metaType": "string",
+                            "metaValue": "-575.021 332.771 363.654 25.1762"
+                        }
+                    ]
+                },
+                {
+                    "metaName": "ViewportRect",
+                    "metaType": "string",
+                    "metaValue": "-1005.55 -258.184 1727.83 1509.01"
+                },
+                {
+                    "metaName": "DisplayMode",
+                    "metaType": "string",
+                    "metaValue": "2"
+                },
+                {
+                    "metaName": "LayoutPos",
+                    "metaType": "string",
+                    "metaValue": "-440.314 -528.641"
+                }
+            ],
+            "overloadsUnlocked": "true",
+            "ports": [
+                {
+                    "portName": "field_in",
+                    "portDirection": "input",
+                    "portType": "Core::Fields::VectorField",
+                    "portDefault": {}
+                },
+                {
+                    "portName": "min",
+                    "portDirection": "input",
+                    "portType": "Math::float3",
+                    "portDefault": {
+                        "x": "0f",
+                        "y": "0f",
+                        "z": "0f"
+                    }
+                },
+                {
+                    "portName": "max",
+                    "portDirection": "input",
+                    "portType": "Math::float3",
+                    "portDefault": {
+                        "x": "0f",
+                        "y": "0f",
+                        "z": "0f"
+                    }
+                },
+                {
+                    "portName": "oldMin",
+                    "portDirection": "input",
+                    "portType": "Math::float3",
+                    "portDefault": {
+                        "x": "0f",
+                        "y": "0f",
+                        "z": "0f"
+                    }
+                },
+                {
+                    "portName": "oldMax",
+                    "portDirection": "input",
+                    "portType": "Math::float3",
+                    "portDefault": {
+                        "x": "0f",
+                        "y": "0f",
+                        "z": "0f"
+                    }
+                },
+                {
+                    "portName": "clamp",
+                    "portDirection": "input",
+                    "portType": "bool",
+                    "portDefault": "true"
+                },
+                {
+                    "portName": "output",
+                    "portDirection": "output",
+                    "portType": "Core::Fields::VectorField"
+                }
+            ],
+            "compoundNodes": [
+                {
+                    "nodeName": "value_minus_oldMin",
+                    "nodeType": "Core::Math::subtract",
+                    "multiInPortNames": [
+                        "field_in",
+                        "scalar_field"
+                    ],
+                    "metadata": [
+                        {
+                            "metaName": "DisplayMode",
+                            "metaType": "string",
+                            "metaValue": "2"
+                        },
+                        {
+                            "metaName": "LayoutPos",
+                            "metaType": "string",
+                            "metaValue": "7 482"
+                        }
+                    ]
+                },
+                {
+                    "nodeName": "oldMax_minus_oldMin",
+                    "nodeType": "Core::Math::subtract",
+                    "multiInPortNames": [
+                        "scalar_field",
+                        "scalar_field1"
+                    ],
+                    "metadata": [
+                        {
+                            "metaName": "DisplayMode",
+                            "metaType": "string",
+                            "metaValue": "2"
+                        },
+                        {
+                            "metaName": "LayoutPos",
+                            "metaType": "string",
+                            "metaValue": "7 782"
+                        }
+                    ]
+                },
+                {
+                    "nodeName": "divide",
+                    "nodeType": "Core::Math::divide",
+                    "multiInPortNames": [
+                        "output1",
+                        "output2"
+                    ],
+                    "metadata": [
+                        {
+                            "metaName": "DisplayMode",
+                            "metaType": "string",
+                            "metaValue": "2"
+                        },
+                        {
+                            "metaName": "LayoutPos",
+                            "metaType": "string",
+                            "metaValue": "337 602"
+                        }
+                    ]
+                },
+                {
+                    "nodeName": "max_minus_min",
+                    "nodeType": "Core::Math::subtract",
+                    "multiInPortNames": [
+                        "scalar_field",
+                        "scalar_field1"
+                    ],
+                    "metadata": [
+                        {
+                            "metaName": "DisplayMode",
+                            "metaType": "string",
+                            "metaValue": "2"
+                        },
+                        {
+                            "metaName": "LayoutPos",
+                            "metaType": "string",
+                            "metaValue": "7 212"
+                        }
+                    ]
+                },
+                {
+                    "nodeName": "multiply",
+                    "nodeType": "Core::Math::multiply",
+                    "multiInPortNames": [
+                        "output1",
+                        "output2"
+                    ],
+                    "metadata": [
+                        {
+                            "metaName": "DisplayMode",
+                            "metaType": "string",
+                            "metaValue": "2"
+                        },
+                        {
+                            "metaName": "LayoutPos",
+                            "metaType": "string",
+                            "metaValue": "607 212"
+                        }
+                    ]
+                },
+                {
+                    "nodeName": "add",
+                    "nodeType": "Core::Math::add",
+                    "multiInPortNames": [
+                        "output1",
+                        "scalar_field"
+                    ],
+                    "metadata": [
+                        {
+                            "metaName": "DisplayMode",
+                            "metaType": "string",
+                            "metaValue": "2"
+                        },
+                        {
+                            "metaName": "LayoutPos",
+                            "metaType": "string",
+                            "metaValue": "877 32"
+                        }
+                    ]
+                },
+                {
+                    "nodeName": "clamp",
+                    "nodeType": "Core::Math::clamp",
+                    "metadata": [
+                        {
+                            "metaName": "DisplayMode",
+                            "metaType": "string",
+                            "metaValue": "2"
+                        },
+                        {
+                            "metaName": "LayoutPos",
+                            "metaType": "string",
+                            "metaValue": "1172.75 282.295"
+                        }
+                    ]
+                },
+                {
+                    "nodeName": "if",
+                    "nodeType": "Core::Logic::if",
+                    "metadata": [
+                        {
+                            "metaName": "DisplayMode",
+                            "metaType": "string",
+                            "metaValue": "2"
+                        },
+                        {
+                            "metaName": "LayoutPos",
+                            "metaType": "string",
+                            "metaValue": "1430.58 129.227"
+                        }
+                    ]
+                },
+                {
+                    "nodeName": "vector_field1",
+                    "nodeType": "Core::Fields::vector_field",
+                    "metadata": [
+                        {
+                            "metaName": "DisplayMode",
+                            "metaType": "string",
+                            "metaValue": "2"
+                        },
+                        {
+                            "metaName": "LayoutPos",
+                            "metaType": "string",
+                            "metaValue": "-289.861 31.5703"
+                        }
+                    ]
+                },
+                {
+                    "nodeName": "vector_field3",
+                    "nodeType": "Core::Fields::vector_field",
+                    "metadata": [
+                        {
+                            "metaName": "DisplayMode",
+                            "metaType": "string",
+                            "metaValue": "2"
+                        },
+                        {
+                            "metaName": "LayoutPos",
+                            "metaType": "string",
+                            "metaValue": "-285.584 231.707"
+                        }
+                    ]
+                },
+                {
+                    "nodeName": "vector_field4",
+                    "nodeType": "Core::Fields::vector_field",
+                    "metadata": [
+                        {
+                            "metaName": "DisplayMode",
+                            "metaType": "string",
+                            "metaValue": "2"
+                        },
+                        {
+                            "metaName": "LayoutPos",
+                            "metaType": "string",
+                            "metaValue": "-276.876 445.045"
+                        }
+                    ]
+                },
+                {
+                    "nodeName": "vector_field5",
+                    "nodeType": "Core::Fields::vector_field",
+                    "metadata": [
+                        {
+                            "metaName": "DisplayMode",
+                            "metaType": "string",
+                            "metaValue": "2"
+                        },
+                        {
+                            "metaName": "LayoutPos",
+                            "metaType": "string",
+                            "metaValue": "-285.584 640.968"
+                        }
+                    ]
+                }
+            ],
+            "connections": [
+                {
+                    "source": "value_minus_oldMin.output",
+                    "target": "divide.first.output1"
+                },
+                {
+                    "source": "oldMax_minus_oldMin.output",
+                    "target": "divide.first.output2"
+                },
+                {
+                    "source": "divide.output",
+                    "target": "multiply.first.output2"
+                },
+                {
+                    "source": "max_minus_min.output",
+                    "target": "multiply.first.output1"
+                },
+                {
+                    "source": "multiply.output",
+                    "target": "add.first.output1"
+                },
+                {
+                    "source": "add.output",
+                    "target": "clamp.value"
+                },
+                {
+                    "source": "add.output",
+                    "target": "if.false_case"
+                },
+                {
+                    "source": "clamp.clamped",
+                    "target": "if.true_case"
+                },
+                {
+                    "source": ".clamp",
+                    "target": "if.condition"
+                },
+                {
+                    "source": ".field_in",
+                    "target": "value_minus_oldMin.first.field_in"
+                },
+                {
+                    "source": ".min",
+                    "target": "clamp.min"
+                },
+                {
+                    "source": ".max",
+                    "target": "clamp.max"
+                },
+                {
+                    "source": ".min",
+                    "target": "vector_field1.value"
+                },
+                {
+                    "source": "vector_field1.vector_field",
+                    "target": "max_minus_min.first.scalar_field1"
+                },
+                {
+                    "source": "vector_field1.vector_field",
+                    "target": "add.first.scalar_field"
+                },
+                {
+                    "source": ".max",
+                    "target": "vector_field3.value"
+                },
+                {
+                    "source": "vector_field3.vector_field",
+                    "target": "max_minus_min.first.scalar_field"
+                },
+                {
+                    "source": ".oldMin",
+                    "target": "vector_field4.value"
+                },
+                {
+                    "source": "vector_field4.vector_field",
+                    "target": "value_minus_oldMin.first.scalar_field"
+                },
+                {
+                    "source": "vector_field4.vector_field",
+                    "target": "oldMax_minus_oldMin.first.scalar_field1"
+                },
+                {
+                    "source": ".oldMax",
+                    "target": "vector_field5.value"
+                },
+                {
+                    "source": "vector_field5.vector_field",
+                    "target": "oldMax_minus_oldMin.first.scalar_field"
+                },
+                {
+                    "source": "if.output",
+                    "target": ".output"
+                }
+            ],
+            "values": [],
+            "reservedNodeNames": [
+                {
+                    "name": "input"
+                },
+                {
+                    "name": "output"
+                }
+            ]
+        }
+    ]
+}
