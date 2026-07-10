@@ -1,0 +1,539 @@
+{
+    "header": {
+        "metadata": [
+            {
+                "metaName": "adskFileFormatVersion",
+                "metaValue": "100L"
+            }
+        ]
+    },
+    "namespaces": [],
+    "types": [],
+    "compounds": [
+        {
+            "name": "User::Compounds::CJS_simple_usd_loader",
+            "metadata": [
+                {
+                    "metaName": "io_nodes",
+                    "metadata": [
+                        {
+                            "metaName": "io_inodes",
+                            "metadata": [
+                                {
+                                    "metaName": "input",
+                                    "metadata": [
+                                        {
+                                            "metaName": "DisplayMode",
+                                            "metaType": "string",
+                                            "metaValue": "2"
+                                        },
+                                        {
+                                            "metaName": "LayoutPos",
+                                            "metaType": "string",
+                                            "metaValue": "-821.48 -835.508"
+                                        },
+                                        {
+                                            "metaName": "io_ports",
+                                            "metadata": [
+                                                {
+                                                    "metaName": "file"
+                                                },
+                                                {
+                                                    "metaName": "path"
+                                                },
+                                                {
+                                                    "metaName": "translation"
+                                                },
+                                                {
+                                                    "metaName": "rotation"
+                                                },
+                                                {
+                                                    "metaName": "uniform_scale"
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "metaName": "zValue",
+                                            "metaType": "string",
+                                            "metaValue": "37.000000"
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "metaName": "io_onodes",
+                            "metadata": [
+                                {
+                                    "metaName": "output",
+                                    "metadata": [
+                                        {
+                                            "metaName": "io_ports",
+                                            "metadata": [
+                                                {
+                                                    "metaName": "prim_definition"
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "metaName": "DisplayMode",
+                                            "metaType": "string",
+                                            "metaValue": "2"
+                                        },
+                                        {
+                                            "metaName": "LayoutPos",
+                                            "metaType": "string",
+                                            "metaValue": "185 -810"
+                                        },
+                                        {
+                                            "metaName": "zValue",
+                                            "metaType": "string",
+                                            "metaValue": "31.000000"
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "metaName": "ViewportRect",
+                    "metaType": "string",
+                    "metaValue": "-828 -1319.59 858 1396.51"
+                },
+                {
+                    "metaName": "DisplayMode",
+                    "metaType": "string",
+                    "metaValue": "2"
+                },
+                {
+                    "metaName": "LayoutPos",
+                    "metaType": "string",
+                    "metaValue": "-400.897 -427.783"
+                },
+                {
+                    "metaName": "zValue",
+                    "metaType": "string",
+                    "metaValue": "60.000000"
+                }
+            ],
+            "ports": [
+                {
+                    "portName": "prim_definition",
+                    "portDirection": "output",
+                    "portType": "Object"
+                },
+                {
+                    "portName": "file",
+                    "portDirection": "input",
+                    "portType": "string",
+                    "portDefault": "",
+                    "metadata": [
+                        {
+                            "metaName": "UIWidget",
+                            "metaType": "string",
+                            "metaValue": "FileBrowserWidget"
+                        },
+                        {
+                            "metaName": "UIWidgetProp",
+                            "metaType": "string",
+                            "metaValue": "browserMode=open;filter=\"USD (*.usd *.usda *.usdc *.usdz);;All (*.*)\""
+                        }
+                    ]
+                },
+                {
+                    "portName": "path",
+                    "portDirection": "input",
+                    "portType": "string",
+                    "portDefault": "/obj/"
+                },
+                {
+                    "portName": "translation",
+                    "portDirection": "input",
+                    "portType": "Math::float3",
+                    "portDefault": {
+                        "x": "0f",
+                        "y": "0f",
+                        "z": "0f"
+                    }
+                },
+                {
+                    "portName": "rotation",
+                    "portDirection": "input",
+                    "portType": "Math::float3",
+                    "portDefault": {
+                        "x": "0f",
+                        "y": "0f",
+                        "z": "0f"
+                    }
+                },
+                {
+                    "portName": "uniform_scale",
+                    "portDirection": "input",
+                    "portType": "float",
+                    "portDefault": "1f"
+                }
+            ],
+            "compoundNodes": [
+                {
+                    "nodeName": "define_usd_prim",
+                    "nodeType": "USD::Prim::define_usd_prim",
+                    "fanInPortNames": {
+                        "variant_set_definitions": [],
+                        "reference_definitions": [
+                            "reference_definitions"
+                        ],
+                        "attribute_definitions": [
+                            "attribute_definitions"
+                        ],
+                        "children": [],
+                        "relationship_definitions": []
+                    },
+                    "metadata": [
+                        {
+                            "metaName": "DisplayMode",
+                            "metaType": "string",
+                            "metaValue": "2"
+                        },
+                        {
+                            "metaName": "portMetadata:reference_definitions.reference_definitions:quick_create",
+                            "metaType": "string",
+                            "metaValue": "USD::Prim::define_usd_reference;USD::Prim::define_usd_reference_from_file"
+                        },
+                        {
+                            "metaName": "portMetadata:attribute_definitions.attribute_definitions:quick_create",
+                            "metaType": "string",
+                            "metaValue": "USD::Attribute::define_usd_attribute;USD::Attribute::define_usd_transform;USD::Attribute::define_usd_display_color"
+                        },
+                        {
+                            "metaName": "PortExpandedState",
+                            "metadata": [
+                                {
+                                    "metaName": "reference_definitions",
+                                    "metaType": "string",
+                                    "metaValue": "1"
+                                },
+                                {
+                                    "metaName": "attribute_definitions",
+                                    "metaType": "string",
+                                    "metaValue": "1"
+                                },
+                                {
+                                    "metaName": "relationship_definitions",
+                                    "metaType": "string",
+                                    "metaValue": "0"
+                                }
+                            ]
+                        },
+                        {
+                            "metaName": "LayoutPos",
+                            "metaType": "string",
+                            "metaValue": "-120 -886"
+                        },
+                        {
+                            "metaName": "zValue",
+                            "metaType": "string",
+                            "metaValue": "33.000000"
+                        }
+                    ]
+                },
+                {
+                    "nodeName": "define_usd_reference_from_file",
+                    "nodeType": "USD::Prim::define_usd_reference_from_file",
+                    "metadata": [
+                        {
+                            "metaName": "DisplayMode",
+                            "metaType": "string",
+                            "metaValue": "2"
+                        },
+                        {
+                            "metaName": "LayoutPos",
+                            "metaType": "string",
+                            "metaValue": "-417 -986"
+                        },
+                        {
+                            "metaName": "zValue",
+                            "metaType": "string",
+                            "metaValue": "32.000000"
+                        }
+                    ]
+                },
+                {
+                    "nodeName": "define_usd_transform",
+                    "nodeType": "USD::Attribute::define_usd_transform",
+                    "metadata": [
+                        {
+                            "metaName": "DisplayMode",
+                            "metaType": "string",
+                            "metaValue": "2"
+                        },
+                        {
+                            "metaName": "LayoutPos",
+                            "metaType": "string",
+                            "metaValue": "-413 -633"
+                        },
+                        {
+                            "metaName": "zValue",
+                            "metaType": "string",
+                            "metaValue": "34.000000"
+                        }
+                    ]
+                },
+                {
+                    "nodeName": "scalar_to_vector3",
+                    "nodeType": "Core::Conversion::scalar_to_vector3",
+                    "metadata": [
+                        {
+                            "metaName": "DisplayMode",
+                            "metaType": "string",
+                            "metaValue": "2"
+                        },
+                        {
+                            "metaName": "LayoutPos",
+                            "metaType": "string",
+                            "metaValue": "-623 -457"
+                        },
+                        {
+                            "metaName": "zValue",
+                            "metaType": "string",
+                            "metaValue": "35.000000"
+                        }
+                    ]
+                },
+                {
+                    "nodeName": "value",
+                    "valueType": "float",
+                    "metadata": [
+                        {
+                            "metaName": "DisplayMode",
+                            "metaType": "string",
+                            "metaValue": "2"
+                        },
+                        {
+                            "metaName": "LayoutPos",
+                            "metaType": "string",
+                            "metaValue": "-928 -432"
+                        },
+                        {
+                            "metaName": "zValue",
+                            "metaType": "string",
+                            "metaValue": "36.000000"
+                        }
+                    ]
+                }
+            ],
+            "connections": [
+                {
+                    "source": "define_usd_reference_from_file.reference_definitions",
+                    "target": "define_usd_prim.reference_definitions.reference_definitions"
+                },
+                {
+                    "source": "define_usd_transform.attribute_definitions",
+                    "target": "define_usd_prim.attribute_definitions.attribute_definitions"
+                },
+                {
+                    "source": "define_usd_prim.prim_definition",
+                    "target": ".prim_definition"
+                },
+                {
+                    "source": ".file",
+                    "target": "define_usd_reference_from_file.file"
+                },
+                {
+                    "source": ".path",
+                    "target": "define_usd_prim.path"
+                },
+                {
+                    "source": "scalar_to_vector3.vector3",
+                    "target": "define_usd_transform.scale"
+                },
+                {
+                    "source": "value.output",
+                    "target": "scalar_to_vector3.x"
+                },
+                {
+                    "source": "value.output",
+                    "target": "scalar_to_vector3.y"
+                },
+                {
+                    "source": "value.output",
+                    "target": "scalar_to_vector3.z"
+                },
+                {
+                    "source": ".uniform_scale",
+                    "target": "value.value"
+                },
+                {
+                    "source": ".translation",
+                    "target": "define_usd_transform.translation"
+                },
+                {
+                    "source": ".rotation",
+                    "target": "define_usd_transform.rotation"
+                }
+            ],
+            "values": [
+                {
+                    "valueName": "define_usd_prim.path",
+                    "valueType": "string",
+                    "value": "/obj/palm01"
+                },
+                {
+                    "valueName": "define_usd_prim.variant_set_definitions",
+                    "valueType": "array<Object>",
+                    "value": []
+                },
+                {
+                    "valueName": "define_usd_prim.reference_definitions",
+                    "valueType": "array<Object>",
+                    "value": []
+                },
+                {
+                    "valueName": "define_usd_prim.attribute_definitions",
+                    "valueType": "array<Object>",
+                    "value": []
+                },
+                {
+                    "valueName": "define_usd_prim.children",
+                    "valueType": "array<Object>",
+                    "value": []
+                },
+                {
+                    "valueName": "define_usd_prim.relationship_definitions",
+                    "valueType": "array<Object>",
+                    "value": []
+                },
+                {
+                    "valueName": "define_usd_prim.type",
+                    "valueType": "string",
+                    "value": "Xform"
+                },
+                {
+                    "valueName": "define_usd_prim.specifier",
+                    "valueType": "BifrostUsd::SdfSpecifier",
+                    "value": "Def"
+                },
+                {
+                    "valueName": "define_usd_prim.kind",
+                    "valueType": "BifrostUsd::ModelKind",
+                    "value": "None"
+                },
+                {
+                    "valueName": "define_usd_prim.purpose",
+                    "valueType": "BifrostUsd::ImageablePurpose",
+                    "value": "Default"
+                },
+                {
+                    "valueName": "define_usd_prim.active",
+                    "valueType": "BifrostUsd::ActivatePrim",
+                    "value": "None"
+                },
+                {
+                    "valueName": "define_usd_prim.instanceable",
+                    "valueType": "BifrostUsd::InstanceablePrim",
+                    "value": "None"
+                },
+                {
+                    "valueName": "define_usd_prim.applied_schema_names",
+                    "valueType": "string",
+                    "value": ""
+                },
+                {
+                    "valueName": "define_usd_prim.variant_set_name",
+                    "valueType": "string",
+                    "value": ""
+                },
+                {
+                    "valueName": "define_usd_prim.variant_name",
+                    "valueType": "string",
+                    "value": ""
+                },
+                {
+                    "valueName": "define_usd_prim.material",
+                    "valueType": "Object",
+                    "value": {}
+                },
+                {
+                    "valueName": "define_usd_reference_from_file.file",
+                    "valueType": "string",
+                    "value": "D:/04_projects/G63/tree_exports/coconut_palm/Coconut_Palm_Straight_Long_Bark_01.usd"
+                },
+                {
+                    "valueName": "define_usd_reference_from_file.arc_type",
+                    "valueType": "BifrostUsd::ArcType",
+                    "value": "Reference"
+                },
+                {
+                    "valueName": "define_usd_reference_from_file.prim_path",
+                    "valueType": "string",
+                    "value": ""
+                },
+                {
+                    "valueName": "define_usd_reference_from_file.layer_offset",
+                    "valueType": "double",
+                    "value": "0"
+                },
+                {
+                    "valueName": "define_usd_reference_from_file.layer_scale",
+                    "valueType": "double",
+                    "value": "1"
+                },
+                {
+                    "valueName": "define_usd_reference_from_file.position",
+                    "valueType": "BifrostUsd::UsdListPosition",
+                    "value": "UsdListPositionFrontOfPrependList"
+                },
+                {
+                    "valueName": "define_usd_reference_from_file.anchor_path",
+                    "valueType": "string",
+                    "value": ""
+                },
+                {
+                    "valueName": "define_usd_transform.translation",
+                    "valueType": "Math::float3",
+                    "value": {
+                        "x": "0f",
+                        "y": "0f",
+                        "z": "0f"
+                    }
+                },
+                {
+                    "valueName": "define_usd_transform.rotation",
+                    "valueType": "Math::float3",
+                    "value": {
+                        "x": "-90f",
+                        "y": "0f",
+                        "z": "0f"
+                    }
+                },
+                {
+                    "valueName": "define_usd_transform.scale",
+                    "valueType": "Math::float3",
+                    "value": {
+                        "x": "10f",
+                        "y": "10f",
+                        "z": "10f"
+                    }
+                },
+                {
+                    "valueName": "value.value",
+                    "valueType": "float",
+                    "value": "0f"
+                }
+            ],
+            "reservedNodeNames": [
+                {
+                    "name": "input"
+                },
+                {
+                    "name": "output"
+                }
+            ],
+            "libraryDependencies": {
+                "Amino": "3.0.0.0",
+                "bif": "3.0.0.0",
+                "usd_pack": "1.4.2"
+            }
+        }
+    ]
+}
